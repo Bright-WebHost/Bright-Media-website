@@ -1,0 +1,56 @@
+/* .profileCard{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.card{
+    margin: 10px;
+   border: none ;
+} */
+.card-body{
+    background-color:#FEF5E7  ;
+    /* margin: 10px !important; */
+}
+.card-title{
+    color: #224674;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-text{
+    color: #0061FF;
+    font-size: 14px;
+    font-weight: 600;
+}
+.profileCardSub{
+    background-color: #FEF5E7;
+    color:#0061FF;
+    margin-bottom: 10px;
+}
+
+
+.profileCard {
+    background-color:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: calc(50% - 20px); /* Adjust margin */
+    margin: 10px;
+    border: none;
+}
+.hrline{
+    width:30%;
+    height:5px;
+    background-color:#0061FF;
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: calc(100% - 20px); /* Adjust margin */
+    }
+}

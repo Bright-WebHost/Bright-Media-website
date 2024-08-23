@@ -1,0 +1,2413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bright Media </title>
+	<meta name="description" content="Bright Media - Digital Agency">
+
+	<meta name="keywords" content="advertising, advertising agency, agency, agency theme, business, creative agency, digital, digital advertising, digital agency, digital marketing, digital marketing agency, digital theme, marketing, startup,website,web develop">
+	<meta name="author" content="Themexriver">
+	<link rel="shortcut icon" href="assets/img/bright/main logo/B.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/video.min.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+	<link rel="stylesheet" href="assets/css/whatsapp.css">
+	<!-- <link rel="stylesheet" href="assets/css/google.css"> -->
+	<link rel="stylesheet" href="assets/css/new.css">
+	<link rel="stylesheet" href="assets/css/translatelan.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/logoslider.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<style>
+
+	
+/* Apply full red background color to the Google Translate element */
+
+
+.logo-widget {
+    margin-top: 20px;
+    background-image: url('assets/img/Posters/footerlogo.webp'); /* Default image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 200px; /* Adjust height as needed */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .logo-widget {
+        background-image: url('assets/img/bright/logo/BM Logo (1).png'); /* New image for smaller screens */
+        width: 150px; 
+	
+		margin-bottom: -160px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .ori-vector-bg {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 300px;
+  
+  }
+  .ori-vector-bg img {
+    display: block;
+    height: auto;
+    width: 400px;
+    opacity: 0.7;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel_nav {
+        display: block; /* Show navigation buttons for mobile devices */
+    }
+	.ori-testimonial-text p {
+    margin-top: 30px; /* Adjust the margin-top of the paragraph */
+	
+  }
+  .ori-testimonial-title h3 {
+    /* background-color: red; */
+	margin-top: 90px;
+	
+  }
+  .carousel_nav button img {
+    /* margin-left: -100px; 
+    margin-right: -100px;
+	margin-top: -200px; */
+	/* width: 100%;
+	height: 100%; */
+	
+  }
+  #ori-testimonial-1 {
+    margin-bottom: -120px; /* Adjust the bottom margin for system and laptop screens */
+  }
+  #sidetitle h2 {
+      margin-top: 70px;
+	  
+	
+
+    }
+	#sidetitle h2 span {
+		
+		font-size: 35px;
+	}
+}
+
+
+
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  background-color:transparent ;
+}
+
+/* Pause animation when slider is hovered */
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+/* Show pause logo when slider is hovered */
+.slider:hover .pause-logo {
+  opacity: 1;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100%; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  position: relative;
+  margin-right: 10px; /* Add a gap between images */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 135%;
+  font-size: 1.8rem;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+} */
+/* 
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slide {
+    transition: filter .4s;
+    margin: 0px 40px;
+} */
+
+/* .fas {
+    color: #96bd0b;
+} */
+/* .slick-prev {
+    left: 0;
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 35%;
+    font-size: 1.8rem;
+} */
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .slick-prev, .slick-next {
+  position: absolute;
+  top: 125%;
+  font-size: 1.8rem;
+
+  
+} */
+
+.slick-prev {
+  left: 30px;
+  opacity: 0.5;
+}
+
+.slick-next {
+  right: 5px;
+  opacity: 0.5;
+  
+}
+.slick-next:hover {
+	opacity: 1;
+}
+.slick-prev:hover {
+	opacity: 1;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+	
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slide {
+    transition: filter .4s;
+    margin: 0px 40px;
+}
+
+
+.slick-prev {
+    left: 0;
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 20%;
+    font-size: 2.8rem;
+	margin: 6px;
+	margin-left: 20px;
+	margin-right: 3px;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    #ori-btn-01 {
+        display: none; /* Hide the button on desktop */
+    }
+	
+}
+@media (max-width: 767px) {
+    #ori-btn-001 {
+        display: none; /* Hide the button on mobile */
+    }
+	#ori-btn-01 {
+        margin-bottom: 30px;
+    }
+	.ori-mission-accordion{
+		
+		margin-top: -10px;
+	}
+	.ori-mission-content{
+		
+		margin-top: -3px !important;
+	}
+
+}
+/* CSS for mobile view */
+
+.logos{
+	background-color: #fff !important;
+	margin-bottom: 40px;
+}
+
+
+.ori-about-counter-area {
+  cursor: pointer;
+  /* position: relative; */
+}
+
+/* .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/Posters/download\ \(1\).png);
+  opacity: 0.5; 
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.ori-about-counter-area:hover .shadow {
+  opacity: 1; 
+ 
+} */
+
+
+@media (max-width: 768px) {
+    .ori-section-title-1 h2 {
+        flex-direction: row; /* Change flex direction to display words horizontally */
+    }
+
+    .ori-section-title-1 h2 span {
+        display: inline-block; /* Display spans inline */
+        margin-right: 5px; /* Add some space between words */
+    }
+}
+@media (max-width: 768px) { /* Adjust the max-width value based on your mobile breakpoint */
+    #counrtyflags {
+        display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .ori-about-play-area {
+        margin-top: 10px !important;
+    }
+}
+</style>
+<body class="ori-digital-studio">
+	<!-- <div id="preloader">
+		<div class="containers">
+			<div class="line"></div>
+			<div class="line d1"></div>
+			<div class="line d2"></div>
+			<div class="line d3"></div>
+			<div class="line d4"></div>
+			<br>
+			
+		 
+			</div>
+		 </div> -->
+	  </div>
+	  <div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	
+<div>
+	<a href="https://wa.me/22597979387"  target='_blank' class="whatsapp-btn" aria-label="whatsapp-btn">
+	  <i class="bi bi-whatsapp"></i>
+	</a>
+</div>
+	<div class="cursor"></div>
+<!-- Start of header section
+	============================================= -->
+	<header id="ori-header" class="ori-header-section header-style-one">
+		
+		<!-- <iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Language Translate Widget" style="box-sizing: content-box; width: 127px; height: 79px; left: 1007.44px; top: 77px;background-color: red;box-shadow: none;"></iframe> -->
+		
+		<div class="ori-header-content-area">
+			<div class="ori-header-content d-flex align-items-center justify-content-between">
+				
+				<div class="brand-logo">
+					<img src="assets/img/Posters/BM Logo (3).png" alt="img" style="width: 180px;">
+				
+				</div>
+				<div class="ori-main-navigation-area">
+					<nav class="ori-main-navigation clearfix ul-li">
+						<ul id="main-nav" class="nav navbar-nav clearfix">
+							<li class="dropdown ori-megamenu">
+								<a href="index.html">Home</a>
+								<!-- <ul class="dropdown-menu clearfix">
+									<li>
+										<div class="ori-megamenu-content">
+											<div class="ori-megamenu-item-wrap">
+												<div class="row justify-content-center">
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm1.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-1.html">Multi Page</a>
+																	<a target="_blank" href="index-1.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Studio</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm2.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-2.html">Multi Page</a>
+																	<a target="_blank" href="index-2.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>App Landing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm3.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-3.html">Multi Page</a>
+																	<a target="_blank" href="index-3.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Marketing Agency</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm4.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-4.html">Multi Page</a>
+																	<a target="_blank" href="index-4.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>SEO Marketing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm5.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-5.html">Multi Page</a>
+																	<a target="_blank" href="index-5.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Insurance</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm6.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-6.html">Multi Page</a>
+																	<a target="_blank" href="index-6.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Marketing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm7.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-7.html">Multi Page</a>
+																	<a target="_blank" href="index-7.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Agency</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm8.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-8.html">Multi Page</a>
+																	<a target="_blank" href="index-8.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Agency</h3>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li> -->
+							<li><a  href="about.html">About</a></li>
+							<!-- <li class="dropdown">
+								<a href="!#">Shop</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a target="_blank" href="shop.html">Shop Page </a></li>
+									<li><a target="_blank" href="shop-single.html">Shop Details</a></li>
+									<li><a target="_blank" href="cart.html">Cart Page</a></li>
+									<li><a target="_blank" href="check-out.html">Check Out Page</a></li>
+								</ul>
+							</li> -->
+							<li class="dropdown">
+								<a href="#">Services</a>
+								<ul class="dropdown-menu clearfix">
+									
+									<li class="dropdown">
+										<li><a  href="socialMedia.html">Social Media Marketing </a></li>
+											<li><a  href="ads.html">Paid Ads  </a></li>
+											<li><a  href="webDev.html">Web Development </a></li>
+											<li><a  href="branding.html">Branding </a></li>
+											<li><a  href="photography.html">Photography  </a></li>
+											<li><a  href="videography.html">Videography   </a></li>
+										
+									</li>
+									
+								</ul>
+							</li>
+							<!-- <li class="dropdown">
+								<a class="" href="#">News</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a  href="blog.html">News </a></li>
+									<li><a  href="blog-single.html">News Details</a></li>
+								</ul>
+							</li> -->
+							<!-- <li class="dropdown">
+								<a href="#">Portfolio</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a  href="portfolio.html">Portfolio </a></li>
+									<li><a  href="portfolio-single.html">Portfolio Details</a></li>
+								</ul>
+							</li> -->
+							<li><a  href="portfolio.html">Portfolio</a></li>
+							<li><a  href="contact.html">Contact</a></li>
+						
+						</ul>
+						
+							
+						
+					</nav>
+					<!-- <ul style="list-style: none; ;display: flex;justify-content: end; gap: 12px;margin-right: -160px;">
+						<li><span>En</span></li>
+				<li><span>Fr</span></li>
+				<li><span>Ar</span></li>
+					</ul> -->
+				</div>
+				
+				<div class="ori-header-sidebar-search d-flex align-items-center">
+					<div class="ori-search-btn">
+						<button class="search-box-outer" aria-label="search">
+							<!-- <span aria-hidden="true"></span> -->
+						</button>
+						<!-- <a href="#" id="google_translate_element"></a> -->
+
+						<div class="language-bar">
+							<a href="#googtrans(en|en)" class="lang-select" data-lang="en">
+								<div class="language-item">
+									<img class="flagimg" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" />
+									<span class="language-code notranslate">En</span>
+								</div>
+							</a>
+							<a href="#googtrans(en|fr)" class="lang-select" data-lang="fr">
+								<div class="language-item">
+									<img class="flagimg" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/fr.svg" alt="France" />
+									<span class="language-code notranslate">Fr</span>
+								</div>
+							</a>
+							<a href="#googtrans(en|ar)" class="lang-select" data-lang="ar">
+								<div class="language-item">
+									<img class="flagimg" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sa.svg" alt="Saudi Arabia" />
+									<span class="language-code notranslate">Ar</span>
+								</div>
+							</a>
+						</div>
+						
+						
+					</div>
+					<div class="ori-sidenav-btn navSidebar-button">
+						<button class="fal fa-bars" aria-label="Name"> 
+							<!-- <i class="fal fa-bars"></i> -->
+						</button>
+					</div>
+				</div>
+				
+			</div>
+			<div style="display: flex;gap: 28px;margin: 2px;" id="counrtyflags">
+				<img src="assets/img/Posters/flag/india (2).png" alt="flagimg">
+				<img src="assets/img/Posters/flag/ivory-coast (2).png" alt="flagimg">
+				<img src="assets/img/Posters/flag/qatar (2).png" alt="flagimg">
+				<img src="assets/img/Posters/flag/united-arab-emirates.png" alt="flagimg">
+			</div>
+			<div class="mobile_menu position-relative ">
+				<div class="mobile_menu_button open_mobile_menu " >
+					<i class="fal fa-bars"></i>
+				</div>
+				<div class="mobile_menu_wrap">
+					<div class="mobile_menu_overlay open_mobile_menu"></div>
+					<div class="mobile_menu_content">
+						<div class="mobile_menu_close open_mobile_menu">
+							<i class="fal fa-times"></i>
+						</div>
+						<div class="m-brand-logo">
+						<img src="assets/img/Posters/BM Logo (3).png" alt="">
+						<div style="display: flex;gap: 25px;justify-content: center;margin-top: 20px;" >
+							<img src="assets/img/Posters/flag/india (2).png" alt="flagimg">
+							<img src="assets/img/Posters/flag/ivory-coast (2).png" alt="flagimg">
+							<img src="assets/img/Posters/flag/qatar (2).png" alt="flagimg">
+							<img src="assets/img/Posters/flag/united-arab-emirates.png" alt="flagimg">
+						</div>
+						</div>
+						
+						<nav class="mobile-main-navigation  clearfix ul-li">
+							<ul id="m-main-nav" class="nav navbar-nav clearfix">
+								<li><a  href="index.html">home</a></li>
+									
+								<li><a  href="about.html">About</a></li>
+								
+								<li class="dropdown">
+									<a href="#">Services</a>
+									<ul class="dropdown-menu clearfix">
+										
+										<li >
+											<li><a  href="socialMedia.html">Social Media Marketing </a></li>
+											<li><a  href="ads.html">Paid Ads  </a></li>
+											<li><a  href="webDev.html">Web Development </a></li>
+											<li><a  href="branding.html">Branding </a></li>
+											<li><a  href="photography.html">Photography  </a></li>
+											<li><a  href="videography.html">Videography   </a></li>
+											
+										</li>
+										
+									</ul>
+								</li>
+								<!-- <li class="dropdown">
+									<a class="" href="#">News</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="blog.html">News </a></li>
+										<li><a  href="blog-single.html">News Details</a></li>
+									</ul>
+								</li> -->
+								<!-- <li class="dropdown">
+									<a href="#">Portfolio</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="portfolio.html">Portfolio </a></li>
+										<li><a  href="portfolio-single.html">Portfolio Details</a></li>
+									</ul>
+								</li> -->
+								<li><a  href="portfolio.html">Portfolio</a></li>
+								<li><a  href="contact.html">contact</a></li>
+								
+								
+							</ul>
+							
+						</nav>
+						
+					</div>
+				
+				</div>
+				
+				<!-- /Mobile-Menu -->
+			</div>
+		</div>
+	</header><!-- /header -->
+
+	<!-- Search PopUp -->
+	<!-- <div class="search-popup">
+		<button class="close-search style-two"><span class="fal fa-times"></span></button>
+		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
+		<form method="post" action="#">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</form>
+	</div> -->
+	<!-- Sidebar sidebar Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black">
+			<div class="row loader-area">
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget">
+						X
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+
+					<div class="sidebar-info-contents headline pera-content">
+						<div class="content-inner">
+							<div class="logo">
+								<img src="assets/img/Posters/BM Logos.webp" alt="">
+							</div>
+							<div class="content-box">
+								<h5>Services</h5>
+								<ul style="list-style: none;line-height: 250%;">
+									        <li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a href="socialMedia.html">Social Media Marketing</a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a href="ads.html">Paid Ads  </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="webDev.html">Web Development </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="branding.html">Branding </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="photography.html">Photography  </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="videography.html">Videography   </a></li>
+								</ul>
+							</div>
+							<!-- <div class="gallery-box ul-li">
+								<h5>Gallery</h5>
+								<ul class="zoom-gallery">
+									<li><a href="assets/img/gallery/gl1.png" data-source="assets/img/gallery/gl1.png"><img src="assets/img/gallery/gl1.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl2.png" data-source="assets/img/gallery/gl2.png"><img src="assets/img/gallery/gl2.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl3.png" data-source="assets/img/gallery/gl3.png"><img src="assets/img/gallery/gl3.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl4.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl4.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl5.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl5.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl6.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl6.png" alt=""></a></li>
+								</ul>
+							</div> -->
+							
+							<div class="content-box">
+								<h5>Social Account</h5>
+								<ul class="social-box">
+									<li><a href="https://wa.me/225 0797979387" class="fab fa-whatsapp"></a></li>
+									<li><a href="https://www.instagram.com/brightmedia.tech/" class="fab fa-instagram"></a></li>
+									<li><a href="https://www.linkedin.com/company/brightmedia-tech/" class="fab fa-linkedin"></a></li>
+									<li><a href="https://www.facebook.com/brightmediaglobal/" class="fab fa-facebook-f"></a></li>
+									<li><a href="https://www.youtube.com/@MoideenShahil" class="fab fa-youtube"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+<!-- End of header section
+	============================================= -->
+
+<!-- Start of Slider section
+	============================================= -->
+	<section id="ori-slider-1" class="ori-slider-section-1 position-relative">
+		
+		<div class="ori-slider-content-wrapper-1 postion-relative">
+			<div class="ori-slider-social position-absolute text-uppercase ul-li">
+				<ul>
+					<li><a href="https://www.facebook.com/brightmediaglobal/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+					<li><a href="https://www.linkedin.com/company/brightmedia-tech/"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+					<li><a href="https://www.instagram.com/brightmedia.tech/"><i class="fab fa-instagram"></i>Instagram </a></li>
+				</ul>
+				
+			</div>
+			<!-- <div style="margin-top: 120px;">
+				<h1>oo</h1>
+			</div>
+				-->
+				
+			<div class="ori-slider-wrap-1" >
+				
+				<div  class="ori-slider-content-1 position-relative" >
+					<div class="ori-slider-text text-center  text-uppercase">
+						<h1>Bringing Your Brand  <span> to the</span> 
+							Bright Side <i class="fas fa-arrow-right"></i>
+						</h1>
+						<div class="slider-play-btn">
+							<a class="video_box d-flex align-items-center justify-content-center text-uppercase " href="https://www.youtube.com/watch?v=wjdBaZj7AyU">PLAY</a>
+						</div>
+						<div class="ori-slider-img position-absolute">
+							<img src="assets/img/Posters/bannerimg.webp" alt="img">
+						</div>
+					</div>
+				</div>
+				<div class="ori-slider-content-1 position-relative">
+					<div class="ori-slider-text text-center  text-uppercase">
+						<h1>We build, grow and <span>help you scale</span> 
+							your business <i class="fas fa-arrow-right"></i>
+						</h1>
+						<div class="slider-play-btn">
+							<a class="video_box d-flex align-items-center justify-content-center text-uppercase" href="https://www.youtube.com/watch?v=wjdBaZj7AyU">PLAY</a>
+						</div>
+						<div class="ori-slider-img position-absolute">
+							<img src="assets/img/Posters/bannerimg.webp" alt="img">
+						</div>
+					</div>
+				</div>
+				<div class="ori-slider-content-1 position-relative">
+					<div class="ori-slider-text text-center  text-uppercase">
+						<h1>Build Digital <span>PRoduct</span> 
+							and Brand <i class="fas fa-arrow-right"></i>
+						</h1>
+						<div class="slider-play-btn">
+							<a class="video_box d-flex align-items-center justify-content-center text-uppercase" href="https://www.youtube.com/watch?v=wjdBaZj7AyU">PLAY</a>
+						</div>
+						<div class="ori-slider-img position-absolute">
+							<img src="assets/img/Posters/bannerimg.webp" alt="img">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</div>
+		<div  class="ori-slider-scroll position-absolute text-uppercase">
+			<span>Scrool </span>
+			<div class="scroll-mouse">
+				<i class="fal fa-mouse"></i>
+			</div>
+		</div>
+	</section>				
+<!-- End of Slider section
+	============================================= -->
+
+<!-- Start of Service section
+	============================================= -->
+	<section id="ori-service-1" class="ori-service-section-1" >
+		<div class="ori-service-wrapper-1"  >
+			<div class="container">
+				<div class="ori-service-top-content-1 d-flex justify-content-between align-items-center" style="margin-top: -30px;">
+					<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+						<h2>Transforming Brands, Maximizing <span> Reach - Our Services</span></h2>
+						
+					</div>
+					<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<div class="ori-service-content-1">
+					<div class="row justify-content-center ">
+						<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+							<div class="ori-service-inner-item position-relative">
+								<div class="ori-service-more position-absolute">
+									<a href="about.html"><i class="fas fa-arrow-right"></i></a>
+								</div>
+								<div class="ori-service-img-title position-relative">
+									<div class="ori-service-img">
+										<img src="assets/img/Posters/1.webp" alt="img" >
+									</div>
+									<div class="ori-service-title text-center position-absolute">
+										<h3>About Us  <i class="fal fa-arrow-right"></i></h3>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+							<div class="ori-service-inner-item position-relative">
+								<div class="ori-service-more position-absolute">
+									<a href="mission.html"><i class="fas fa-arrow-right"></i></a>
+								</div>
+								<div class="ori-service-img-title position-relative">
+									<div class="ori-service-img">
+										<img src="assets/img/Posters/3.webp" alt="img" >
+									</div>
+									<div class="ori-service-title text-center position-absolute">
+										<h3>Our Mission  <i class="fal fa-arrow-right"></i></h3>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+							<div class="ori-service-inner-item position-relative">
+								<div class="ori-service-more position-absolute">
+									<a href="portfolio.html"><i class="fas fa-arrow-right"></i></a>
+								</div>
+								<div class="ori-service-img-title position-relative">
+									<div class="ori-service-img">
+										<img src="assets/img/Posters/5.webp" alt="img" >
+									</div>
+									<div class="ori-service-title text-center position-absolute">
+										<h3>Our works  <i class="fal fa-arrow-right"></i></h3>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of Service section
+	============================================= -->
+
+
+
+
+	<section id="ori-about-play" class="ori-about-play-section position-relative" style="margin-top: -200px; margin-bottom: -140px;">
+	<div class="ori-about-counter-area" id="container" >
+		<!-- Your content goes here -->
+			<div id="sidetitle" >
+				<h2 style="font-size:40px; font-weight: 700; text-transform: uppercase;">Transforming <span style="-webkit-text-fill-color: transparent;
+					-webkit-text-stroke-width: 1px;
+					-webkit-text-stroke-color: #fff;">Brands, Maximizing</span></h2>
+			</div>
+			<div class="ori-about-counter-item-wrap d-flex justify-content-between" style="margin: 60px;margin-top: -15px;">
+				
+				<div class="ori-about-counter-item pera-content">
+					<h3><span class="counter">320 </span> +</h3>
+					<p style="color: #2073FE  ;"> // ADS CAMPAIGNS </p>
+				</div>
+				<div class="ori-about-counter-item pera-content">
+					<h3><span class="counter">  43  </span>    M+</h3>
+					<p  style="color:  #2073FE  ;">     // REACH  </p>
+				</div>
+				<div class="ori-about-counter-item pera-content">
+					<h3><span class="counter">   40 </span > +</h3>
+					<p  style="color:  #2073FE ;">  //  BRANDS </p>
+				</div>
+				
+				<div class="ori-about-counter-item pera-content">
+					<h3><span class="counter">   10 </span > K</h3>
+					<p  style="color: #2073FE ;">    // CREATIVES  </p>
+				</div>
+				
+			</div>
+		</div>
+	<!-- </div> -->
+	<div class="line_animation">
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+	</div>
+</section> 
+<!-- end new sections -->
+
+
+	<section id="ori-text-scroll-1" class="ori-text-scroll-section-1 position-relative" >
+		<div class="ori-text-scroll-content">
+			<div class="ori-text-scroll-item-1 text-uppercase">
+				<h3>Creative Digital <span>Studio</span></h3>
+				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+				<h3>Creative Digital <span>Agency</span></h3>
+				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>
+<!-- Start of Project section
+	============================================= -->
+	<section id="ori-project-1" class="ori-project-section-1 position-relative">
+		<div class="container">
+			<div class="ori-project-content-1 position-relative">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="ori-project-tab-btn-content">
+							<div class="ori-section-title-1 text-uppercase wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+								<h2>Creative    <span> Marketing </span>  Agency</h2>
+							</div>
+							<div class="ori-project-tab-btn ul-li-block text-uppercase wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+								<ul class="nav nav-pills" id="pills-tab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Social Media Marketing </button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SEO & Google Ads </button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Web Development </button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="interior-tab" data-bs-toggle="pill" data-bs-target="#interior" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Branding  </button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="construction-tab" data-bs-toggle="pill" data-bs-target="#construction" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Photography & Videography  </button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="ori-project-tab-content wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/socialmediaone.webp" alt="img" >
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="socialMedia.html">Social Media Marketing </a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="socialMedia.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/socialmedia.webp" alt="img" >
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="socialMedia.html">Social Media Marketing </a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="socialMedia.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<!-- <div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/project/pro3.png" alt="">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+											<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
+										</div>
+										<div class="ori-project-link position-absolute">
+											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										</div>
+									</div> -->
+								</div>
+								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-home-tab">
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/15.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="ads.html">SEO & Google Ads </a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="ads.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/14.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="ads.html">SEO & Google Ads </a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="ads.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<!-- <div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/project/pro3.png" alt="">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+											<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
+										</div>
+										<div class="ori-project-link position-absolute">
+											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										</div>
+									</div> -->
+								</div>
+								<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-home-tab">
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/6.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="webDev.html">Web Development</a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="webDev.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/website.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="webDev.html">Web Development</a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="webDev.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<!-- <div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/project/pro3.png" alt="">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+											<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
+										</div>
+										<div class="ori-project-link position-absolute">
+											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										</div>
+									</div> -->
+								</div>
+								<div class="tab-pane fade" id="interior" role="tabpanel" aria-labelledby="pills-home-tab">
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/9.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="branding.html">Branding</a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="branding.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/8.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="branding.html">Branding</a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="branding.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<!-- <div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/project/pro3.png" alt="">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+											<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
+										</div>
+										<div class="ori-project-link position-absolute">
+											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										</div>
+									</div> -->
+								</div>
+								<div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="pills-home-tab">
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/2.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="photography.html">Photography</a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="photography.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/Posters/4.webp" alt="img">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="videography.html">Videography</a></h3>
+											<!-- <span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span> -->
+										</div>
+										<!-- <div class="ori-project-link position-absolute">
+											<a href="videography.html"><i class="fas fa-arrow-right"></i></a>
+										</div> -->
+									</div>
+									<!-- <div class="ori-project-item-1 position-relative">
+										<div class="ori-project-img">
+											<img src="assets/img/project/pro3.png" alt="">
+										</div>
+										<div class="ori-project-text position-absolute">
+											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+											<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
+										</div>
+										<div class="ori-project-link position-absolute">
+											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ori-btn-1 position-absolute text-uppercase wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+					<a href="portfolio.html">Visit our all work</a>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>		
+<!-- End of Project section
+	============================================= -->
+
+<!-- Start of Text scroll section
+	============================================= -->
+	<section id="ori-text-scroll-1" class="ori-text-scroll-section-1 position-relative">
+		<div class="ori-text-scroll-content">
+			<div class="ori-text-scroll-item-1 text-uppercase">
+				<h3>Creative Digital <span>Studio</span></h3>
+				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+				<h3>Creative Digital <span>Agency</span></h3>
+				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>		
+<!-- End of Text scroll section
+	============================================= -->
+	<section class="logos" style="margin-bottom: -30px;">
+		<!-- <hr/> -->
+		<!-- <p style="color:transparent">Responsive Slider</p> -->
+		<br/>
+		<h2 style="font-size:30px; font-weight:900; text-transform: uppercase ; text-align: center;	-webkit-text-stroke-color: black; -webkit-text-stroke-width: 1px; font-size:40px;">Our <span style="color: black;"> Clients</span></h2>
+
+		
+		<section class="customer-logos slider" style="border-radius: 10px;  background-size: cover; background-position: center">
+			
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Honda.webp" alt="">
+			<!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+		  </div>
+	  
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Duracell.webp"  alt="" >
+			<!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+		  </div>
+	  
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Bajaj.webp" alt="" >
+			<!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+		  </div>
+	  
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/giti.webp" alt="" >
+			<!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+		  </div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/olam.webp" alt="" >
+			<!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;margin-top: 10px;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+		  </div>
+	  
+		 
+	
+	  
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Kaisar.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Ml.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Paulshark.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Second cup.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Horeca.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+	
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/metroways.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/amore.webp" alt="">
+		  <!-- <div style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/asia mart.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/tonino.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Azim.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+	
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/proconcept.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Kenny's.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Padel.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/streetfood.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Istanbul.webp" alt="">
+		  <!-- <p style="color: black ;font-weight: 500;text-align: center;text-align: justify;
+			text-justify: inter-word;">User
+				Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p> -->
+			</div>
+	
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/s.s trading.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Zeeba.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/babe.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Hafil.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/webs.webp" alt=""></div>
+	
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/sabs.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Marrouche.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/afri.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/sept.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/paramount.webp" alt=""></div>
+	
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/ar-raafi.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Euro.png" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/logo/Istanbul.webp" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/distrimaxlogo.jpg" alt=""></div>
+		  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/Posters/mcm2.png" alt=""></div>
+		  
+		</section>
+		<hr style="color: black; margin-left: 80px;margin-right: 80px;height:2px ;">
+		<hr style="color: black;">
+		</section>
+
+
+                                                                                             <!-- margin: 20px; border-radius: 5px; -->
+	<section id="ori-mission" class="ori-mission-section position-relative" style="background-color: #fff;">
+		
+		<div class="container">
+			<div class="ori-mission-content" style="margin: 30px;margin-top: -50px;margin-bottom: -60px;">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ori-mission-title-text">
+							<div class="ori-inner-section-title">
+								<span class="sub-title text-uppercase" id="sub-titles" style="color: #0061FF;">OUR Experiences</span>
+								<h2 style="color: black;">Create Brand Identities <span style="color: #0061FF;">& </span> Digital Experiences </h2>
+								<p style="color: black;text-align: justify;text-justify: inter-word;">Designing impactful brand identities and engaging digital experiences to elevate your online presence and drive business success.</p>
+							</div>
+							<div class="ori-btn-1 text-uppercase" id="ori-btn-001">
+								<a href="contact.html" style="color: black;">GET IN TOUCH</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ori-mission-accordion position-relative" >
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingOne" style="color: black;">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#0061FF;">
+											Tailored Approach
+										</button>
+									</h2>
+									<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+										<div class="accordion-body" style="color:black;">
+											At Bright Media, we understand that one size doesn't fit all. We develop customized strategies tailored to each client's unique goals and target audience.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingTwo">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#0061FF;">
+											Data-Driven Insights
+										</button>
+									</h2>
+									<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+										<div class="accordion-body" style="color:black;">
+											Our strategies are backed by thorough research and analysis. We leverage data-driven insights to make informed decisions and optimize campaign performance for maximum results.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingThree">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#0061FF;">
+											Creative Excellence
+										</button>
+									</h2>
+									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+										<div class="accordion-body" style="color: black;">
+											Creativity is at the heart of everything we do. Our team of skilled professionals crafts compelling content and visually stunning designs that captivate audiences and drive engagement.
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingFour">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"style="color:#0061FF;">
+											Continuous Optimization
+										</button>
+									</h2>
+									<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+										<div class="accordion-body" style="color: black;">
+											We believe in the power of continuous improvement. We closely monitor campaign performance, analyze results, and refine strategies to ensure ongoing success and ROI for our clients. 
+										</div>
+									</div>
+								</div>
+								<div class="ori-btn-1 text-uppercase" id="ori-btn-01">
+									<a href="contact.html" style="color: black;">GET IN TOUCH</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>
+
+	<section id="ori-vission" class="ori-vission-section position-relative" >
+		<div class="container">
+			<div class="ori-vission-content">
+				<div class="row">
+					<div class="col-lg-6" >
+						<div class="ori-vission-text-area">
+							<div class="ori-service-why-choose-text">
+								<div class="ori-inner-section-title">
+									<!-- <span class="sub-title text-uppercase" style="font-size: 10px;">Why choose us</span> -->
+									<h2>Accelerate Revenue for your business
+									</h2>
+								</div>
+								<div class="ori-service-why-choose-list-item ul-li-block">
+									<ul>
+										<li>Innovative strategies</li>
+										<li>Transparent communication</li>
+										<li>Timely delivery</li>
+										<li>Client-centric approach</li>
+									</ul>
+								</div>
+								<!-- <div class="ori-vission-more-btn text-uppercase">
+									<a href="about.html">Read More <i class="fal fa-arrow-right"></i></a>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6" >
+						<div class="ori-about-play-area position-relative" style="margin-top: 120px;">
+							<div class="ori-about-play-img">
+								<img src="assets/img/Posters/12438283_SL-110119-24650-47 (1).jpg" alt="" style="border-radius: 10px;">
+							</div>
+							<div class="about-play-btn position-absolute">
+								<a class="text-uppercase video_box d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=sra3yQHuuv0">Play</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>
+
+
+<!-- Start of Sponsor section
+	============================================= -->
+	<!-- our clients -->
+	<!-- <section id="ori-sponsor-1" class="ori-sponsor-section-1 position-relative">
+		<div class="container">
+			<div class="ori-sponsor-title text-uppercase text-center">
+				<h3><i></i> <span>Trusted by</span> <i></i> </h3>
+			</div>
+			<div class="marquee">
+				<div class="marquee-content"  > 
+				
+				  <div class="marquee-item">
+					<img src="assets/img/clientslogos/Azeem.png" alt="" >
+				  </div>
+				  
+				  <div class="marquee-item">
+					<img src="assets/img/clientslogos/Amore.png" alt=""  style="height: fit-content;">
+				  </div>
+				  <div class="marquee-item">
+					<img src="assets/img/clientslogos/Bajaj.png" alt=""  style="height:fit-content; ">
+				  </div>
+				  <div class="marquee-item">
+					<img src="assets/img/clientslogos/Duracell-logo.png" alt=""  style="height:fit-content; ">
+				  </div>
+				  <div class="marquee-item">
+					<img src="assets/img/clientslogos/Honda+.png" alt=""  style="height:fit-content; ">
+				  </div>
+				  
+				    
+				
+				  
+				  
+				  
+	
+				</div>
+			  </div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>		 -->
+
+
+
+
+			
+<!-- End of Sponsor section
+	============================================= -->
+
+
+<!-- <img src="assets/img/clientslogos/"/> -->
+<!-- <div class="container">
+  <h1 class="font-weight-bold h3 mb-5">Our Brand Partners</h1>
+  <hr/>
+  <p>Responsive Slider</p>
+  <section class="customer-logos slider">
+    <div class="slide"><img src="assets/img/clientslogos/Azeem.png">
+    </div>
+
+    <div class="slide"><img src="assets/img/clientslogos/Amore.png">
+    </div>
+
+    <div class="slide"><img src="assets/img/clientslogos/Bajaj.png">
+    </div>
+
+    <div class="slide"><img src="assets/img/clientslogos/Duracell-logo.png">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/Honda+.png" style="height: 90px;">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/Istanbul Global.png" style="height: 100px;">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/Motorland.png" style="height:90px;">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/Olam Agri.png" style="margin-top: 20px;">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/SS.png" style="margin-top: 20px;">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/Tonino.png" style="height: 70px;">
+    </div>
+    <div class="slide"><img src="assets/img/clientslogos/Zeeba Rice Logo.png">
+    </div>
+
+  </section>
+
+  
+</div>
+ -->
+
+
+
+
+
+<!-- Start of Team section
+	============================================= -->
+	<!-- <section id="ori-team-1" class="ori-team-section-1 position-relative">
+		<div class="ori-team-content-area">
+			<div class="container">
+				<div class="ori-team-top-content-1 d-flex justify-content-between align-items-center">
+					<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+						<h2>Meet our team of <span>professional</span></h2>
+					</div>
+					<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<a href="team.html">all Team Member</a>
+					</div>
+				</div>
+				<div class="ori-team-content-1">
+					<div class="row">
+						<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm1.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h3><a href="team-single.html">Alextina Ditarson</a></h3>
+									<span>GRAPHIC DESIGNER</span>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm2.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h3><a href="team-single.html">Alextina Ditarson</a></h3>
+									<span>GRAPHIC DESIGNER</span>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm3.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h3><a href="team-single.html">Alextina Ditarson</a></h3>
+									<span>GRAPHIC DESIGNER</span>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section> -->
+<!-- End of Team section
+	============================================= -->
+
+	
+
+<!-- Start of Testimonial section
+	============================================= -->
+	<!-- client say text hinde -->
+	<!-- <section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative"  style="margin-top: -80px;margin-bottom: -120px;">
+		<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+			<img src="assets/img/bright/home/white icon  (4).png" alt="" style="height: 400px;opacity: 0.2;">
+		</div>
+		<div class="container">
+			<div class="ori-testimonial-content-1 position-relative">
+				<div class="ori-testimonial-title text-center text-uppercase">
+					<h3 >What our Client say</h3>
+				</div> -->
+				
+				<!-- <div class="ori-testimonial-slider-1">
+					
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>ui/ux Designer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>ui/ux Designer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>ui/ux Designer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="carousel_nav">
+					<button type="button" class="testi-left_arrow" ><img src="assets/img/bright/home/left-chevron (1).png" style="margin-left: -200px;"/></button>
+					<button type="button" class="testi-right_arrow"><img src="assets/img/bright/home/left-chevron (2).png" style="margin-right: -200px;"/></button>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div> -->
+	<!-- </section>	 -->
+		<!-- client say text hinde -->
+				
+<!-- End of Testimonial section
+	============================================= -->	 
+
+
+
+	
+<!-- Start of Text scroll section
+	============================================= -->
+	<!-- <section id="ori-text-scroll-2" class="ori-text-scroll-section-2 position-relative">
+		<div class="ori-text-scroll-content">
+			<div class="ori-text-scroll-item-2 clearfix text-uppercase">
+				<h3>Creative Digital <span>Studio</span></h3>
+				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+				<h3>Creative Digital <span>Agency</span></h3>
+				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>		 -->
+<!-- End of Text scroll section
+	============================================= -->
+
+
+
+
+<!-- Start of Blog section
+	============================================= -->
+	<!-- <section id="ori-blog-1" class="ori-blog-section-1 position-relative">
+		<div class="container">
+			<div class="ori-blog-top-content-1 d-flex justify-content-between align-items-center">
+				<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+					<h2>latest <span>posts</span></h2>
+				</div>
+				<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+					<a href="blog.html">See all blogs</a>
+				</div>
+			</div>
+			<div class="ori-blog-content-1">
+				<div class="row">
+					<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+						<div class="ori-blog-inner-item">
+							<div class="blog-inner-img">
+								<img src="assets/img/blog/blg1.png" alt="">
+							</div>
+							<div class="blog-inner-text">
+								<h3><a href="blog-single.html">Accelerating UX Maturity With A Breakthrough Project</a></h3>
+								<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="ori-blog-inner-item">
+							<div class="blog-inner-img">
+								<img src="assets/img/blog/blg2.png" alt="">
+							</div>
+							<div class="blog-inner-text">
+								<h3><a href="blog-single.html">Jump Into July (2022 Desktop Wallpapers Edition)</a></h3>
+								<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+						<div class="ori-blog-inner-item">
+							<div class="blog-inner-img">
+								<img src="assets/img/blog/blg3.png" alt="">
+							</div>
+							<div class="blog-inner-text">
+								<h3><a href="blog-single.html">How To Build A Localized Website With Hugo And Strapi</a></h3>
+								<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>	 -->
+<!-- End of Blog section
+	============================================= -->
+<!-- <br/>
+<br/>
+	<section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal"><br/>
+		<div >
+			<h2 style="font-size:3a0px; font-weight: 700; text-transform: uppercase ; text-align: center;">Trusted  <span style="-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: #fff;"> by</span></h2>
+				<br/>
+		</div>
+		<div class="customer-logos slider" >
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/1 (1).png" alt="Kinderhotel Aschauerhof" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/12 (1).png" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/new2.png" alt="Testerhof" style="margin-top: 40px;"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/SS Traders.png"  style="margin-top: 60px;"></a></div>
+	
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Olam-Agri-logo-2.png" height="150" width="150"  style="margin-top: 60px;"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Giti-Tire-logo-.webp" height="150" width="150"  style="margin-top: 40px;"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Bajaj-Logo-2.png" height="150" width="150"  style="margin-top: 40px;"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/horeca lgo.png" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/13 (1).png" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/15 (2).png" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/16.png" height="150" width="150" alt="Tannenmuehle"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/19.png" height="150" width="150" alt="Loeffele"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/2 (1).png" alt="Krone" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/2 (14).png" alt="Obereggen" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/3 (11).png" alt="Ortnerhof" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/5.png" alt="Ottonenhof" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/7 (8).png" alt="Leiners" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/8.png" alt="Seitenalm" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/12(1).png" alt="Testerhof" height="150" width="150"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/logo.png" alt="Testerhof" height="150" width="150" style="margin-top: 40px;"></a></div>
+		  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/SECOND CUP.png" height="150" width="150"></a></div>
+	  </section>
+	   -->
+<!-- logo slider -->
+<!-- <section class="logos">
+	<hr/>
+	<h2 style="font-size:30px; font-weight: 800; text-transform: uppercase ; text-align: center;color: black;">Our <span style="-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: black;"> Clients</span></h2>
+	
+	<div class="customer-logos slider" style="background-color: #fff;">
+		
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Honda.png" >
+		<p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p>
+	  </div>
+  
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Duracell.png" ><p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p>
+	  </div>
+  
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Bajaj (1).png"><p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p>
+	  </div>
+  
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Giti.png"><p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p>
+	  </div>
+  
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Olam.png"><p style="color: black ;font-weight: 500;text-align: center;text-align: justify;text-justify: inter-word;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p>
+	  </div>
+
+  
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Kaiser (1).png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Motorland (1).png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Paul.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Second Cup.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Horeca.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Metro (1).png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/A,ore.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Asia.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Tonino (1).png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Azim.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Pro.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Kennys.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Padel (1).png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Street food.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Istanbul sofrasi.png"><p style="color: black ;font-weight: 500;text-align: center;">User
+			Could you help me plan a relaxing day that focuses on activities for rejuvenation?</p></div>
+
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/SS (1).png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Zeeba.png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Bebe.png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/H (1).png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Ribs.png"></div>
+
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Sabs food (1).png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Marrouche (1).png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Afrimouses.png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Septtbale.png"></div>
+	  <div class="slide" style="margin-bottom: 30px;margin-top: 20px;"><img src="assets/img/bmclientslogo/Paramount 1 (1).png"></div>
+
+	  <div class="slide"><img src="assets/img/bmclientslogo/Arraafi.png"></div>
+	  
+	</div>
+	  
+	</section> -->
+
+
+ 
+	  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	  
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+
+
+
+<!-- Start of Footer section
+	============================================= -->
+	<footer id="ori-footer" class="ori-footer-section footer-style-one">
+		<div class="container">
+			<!-- <div class="ori-footer-title text-center text-uppercase" style="max-width: 500px; margin: 0 auto;margin-top: -40px;">
+				<a href="contact.html" style="display: block;">
+					<h2 style="font-size: 28px;">Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2>
+				</a>
+			</div> -->
+			<div class="ori-footer-title text-center text-uppercase">
+				<a href="contact.html"><h2>Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2></a>
+			</div>
+			<div class="ori-footer-widget-wrapper" >
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="logo-widget">
+								<a href="#" class="logo-link" aria-label="Home">
+									<!-- Your logo image or text goes here -->
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-1 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Useful Links</h2>
+								<ul>
+									<li><a href="index.html" style="color: #A8A8A8;">Home</a></li>
+									<li><a href="about.html" style="color: #A8A8A8;">About Us</a></li>
+									<li><a href="portfolio.html" style="color: #A8A8A8;">Portfolio</a></li>
+									<li><a href="contact.html" style="color: #A8A8A8;">Contact</a></li>
+									<!-- <li><a href="#">Germany</a></li>
+									<li><a href="#">India</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">India</h2>
+								<ul>
+									<li ><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li style="color: #A8A8A8;">2nd floor, Regal Park, Mission Street, State Bank, Mangalore-575001- Karnataka</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Ivory Coast </h2>
+								<ul>
+									<li><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li><a href="tel:225 07 97 97 93 87" style="color: #fff;font-weight: 300;"> + 225 079797 9387</a></li>
+									<li style="color: #A8A8A8;">Ivory Coast 
+										11 BP 2498-11, 4th Floor, Waimea Bldg, Marcory Boulevard VGE, Abidjan, Côte d'Ivoire</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">UAE</h2>
+								<ul>
+									<li><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li><a href="tel:225 07 97 97 93 87" style="color: #fff;font-weight: 300;"> + 225 079797 9387</a></li>
+									<li style="color: #A8A8A8;">Business Centre, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Qatar</h2>
+								<ul>
+									<li><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li><a href="tel:225 07 97 97 93 87" style="color: #fff;font-weight: 300;"> + 225 079797 9387</a></li>
+									<li style="color: #A8A8A8;">Doha-Qatar</li>
+									
+									
+								</ul>
+
+							</div>
+						</div>
+						
+					</div>
+				
+					<a href="mailto: info@brightmedia.tech"><p style="text-align: center;margin-top: 40px;font-weight: 800;"> info@brightmedia.tech </p></a>
+				</div>
+				
+			</div>
+			<div class="ori-footer-copyright d-flex justify-content-between">
+				<div class="ori-copyright-text">
+					© 2024 All Right Recived - Bright Media 
+				</div>
+				<div class="ori-copyright-social">
+					<a href="https://wa.me/225 0797979387" aria-label="fa-whatsapp"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.instagram.com/brightmedia.tech/" aria-label="fa-instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/" aria-label="fa-linkedin"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.facebook.com/brightmediaglobal/" aria-label="fa-facebook-f"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/@MoideenShahil" aria-label="fa-youtube"><i class="fab fa-youtube"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+<!-- End of Footer section
+	============================================= -->		
+
+	<!-- For Js Library -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- <script src="assets/js/jquery-ui.min.js"></script> -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/appear.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<!-- <script src="assets/js/twin.js"></script> -->
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/knob.js"></script>
+	<script src="assets/js/jquery.filterizr.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<!-- <script src="assets/js/rbtools.min.js"></script> -->
+	<!-- <script src="assets/js/rs6.min.js"></script> -->
+	<script src="assets/js/jarallax.js"></script>
+	<script src="assets/js/jquery.inputarrow.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/jquery.marquee.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/translatelan.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+	<!-- <script src="logos.js"></script> -->
+	<script>
+	$(document).ready(function(){
+    var slider = $('.customer-logos');
+
+    // Initialize Slick slider
+    slider.slick({
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        autoplay: false, // Initially, autoplay is disabled
+        autoplaySpeed: 1500,
+        arrows: true,
+        dots: true,
+        pauseOnHover: false,
+        prevArrow: '<i class="slick-prev fas fa-angle-left"></i>',
+        nextArrow: '<i class="slick-next fas fa-angle-right"></i>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+
+    // Enable autoplay after user interaction (click or scroll)
+    slider.on('mousedown touchstart', function(){
+        slider.slick('slickSetOption', {
+            autoplay: true
+        });
+    });
+});
+
+	</script>
+	
+</body>
+</html>			

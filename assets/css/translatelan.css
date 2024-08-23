@@ -1,0 +1,75 @@
+
+
+
+.language-bar {
+    /* position: fixed; */
+    /* top: 20px; */
+    right: 140px;
+	/* bottom: 10px; */
+    display: flex;
+    flex-direction: row;
+	gap: 10px;
+    /* margin-top: 30px ; */
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .language-bar {
+        /* Adjust positioning for mobile view */
+        position: absolute;
+        bottom: 0;
+        right: 10px; /* You may need to adjust this value based on your design */
+        flex-direction: row; /* Stack items vertically */
+        gap:12px !important;
+        
+       /* Optional: Add padding for better spacing */
+        /* background-color: #f9f9f9; Optional: Add background color */
+        border-radius: 5px; /* Optional: Add border radius for rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for better visibility */
+		
+    }
+
+    .language-item {
+        /* margin-bottom: 320px;  */
+		/* background-color: red; */
+		display: flex;
+    align-items: center;
+    }
+    
+.flagimg {
+    width: 12px !important;
+}
+.language-code {
+    font-size: 12px  !important;
+}
+}
+
+.flagimg {
+    width: 15px;
+    height: auto;
+	opacity: 1;
+    margin: 1px;
+}
+/* .flagimg:hover {
+    width: 12px;
+    height: auto;
+	opacity: 1;
+} */
+
+.language-code {
+    font-size: 15px;
+	opacity: 0.5;
+    font-family: 'Poppins';
+    /* font-weight: bold; */
+}
+.language-code:hover {
+    font-size: 15px;
+	opacity: 1;
+    /* font-weight: bold; */
+}

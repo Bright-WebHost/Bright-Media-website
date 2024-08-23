@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<meta name="description" content="Orixy - Digital Agency HTML Template
+	">
+	<meta name="keywords" content="advertising, advertising agency, agency, agency theme, business, creative agency, digital, digital advertising, digital agency, digital marketing, digital marketing agency, digital theme, marketing, startup">
+	<meta name="author" content="Themexriver">
+	<link rel="shortcut icon" href="assets/img/bright/main logo/B.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+	<link rel="stylesheet" href="assets/css/video.min.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+	.logo-widget {
+    margin-top: 20px;
+    background-image: url('assets/img/bright/main logo/Logo (3).png'); /* Default image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 200px; /* Adjust height as needed */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .logo-widget {
+        background-image: url('assets/img/bright/logo/BM Logo (1).png'); /* New image for smaller screens */
+        width: 150px; /* Adjust width for smaller screens */
+	
+		margin-bottom: -160px;
+    }
+}
+
+
+
+
+  /* new logo pre */
+  .showcase {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+}
+
+.svg3 {
+  position: absolute;
+  top: 12.26rem;
+}
+
+.svg2 {
+  padding-left: 1px;
+}
+
+.svg1 {
+  padding-right: 1px;
+}
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCounterClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.gear {
+  animation: rotateClockwise 3s linear infinite;
+}
+
+.svg3 {
+  animation: rotateCounterClockwise 3s linear infinite;
+}
+.svg1 path,
+.svg2 path,
+.svg3 path {
+  fill: white;
+}
+
+</style>
+<body class="ori-inner-page">
+	<div id="preloader">
+		<section class="showcase">
+			<div class="svg-wrapper">
+			  <svg class="svg1 gear" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+				<path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" />
+			  </svg>
+			  <svg class="svg2 gear" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+				<path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" />
+			  </svg>
+			  <svg class="svg3 gear" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+				<path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" />
+			  </svg>
+			</div>
+		  </section>
+	  </div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<div class="cursor"></div>
+<!-- Start of header section
+	============================================= -->
+	<header id="ori-header" class="ori-header-section header-style-one">
+		<div class="ori-header-content-area">
+			<div class="ori-header-content d-flex align-items-center justify-content-between">
+				<div class="brand-logo">
+					<a href="#"><img src="assets/img/bright/main logo/Bright_Media Logo (6).png" alt="" style="width: 180px;"></a>
+				</div>
+				<div class="ori-main-navigation-area">
+					<nav class="ori-main-navigation clearfix ul-li">
+						<ul id="main-nav" class="nav navbar-nav clearfix">
+							<li class="dropdown ori-megamenu">
+								<a href="index.html">Home</a>
+								<!-- <ul class="dropdown-menu clearfix">
+									<li>
+										<div class="ori-megamenu-content">
+											<div class="ori-megamenu-item-wrap">
+												<div class="row justify-content-center">
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm1.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-1.html">Multi Page</a>
+																	<a target="_blank" href="index-1.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Studio</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm2.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-2.html">Multi Page</a>
+																	<a target="_blank" href="index-2.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>App Landing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm3.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-3.html">Multi Page</a>
+																	<a target="_blank" href="index-3.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Marketing Agency</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm4.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-4.html">Multi Page</a>
+																	<a target="_blank" href="index-4.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>SEO Marketing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm5.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-5.html">Multi Page</a>
+																	<a target="_blank" href="index-5.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Insurance</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm6.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-6.html">Multi Page</a>
+																	<a target="_blank" href="index-6.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Marketing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm7.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-7.html">Multi Page</a>
+																	<a target="_blank" href="index-7.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Agency</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm8.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-8.html">Multi Page</a>
+																	<a target="_blank" href="index-8.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Agency</h3>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li> -->
+							<li><a  href="about.html">About</a></li>
+							<!-- <li class="dropdown">
+								<a href="!#">Shop</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a target="_blank" href="shop.html">Shop Page </a></li>
+									<li><a target="_blank" href="shop-single.html">Shop Details</a></li>
+									<li><a target="_blank" href="cart.html">Cart Page</a></li>
+									<li><a target="_blank" href="check-out.html">Check Out Page</a></li>
+								</ul>
+							</li> -->
+							<li class="dropdown">
+								<a href="#">Services</a>
+								<ul class="dropdown-menu clearfix">
+									
+									<li class="dropdown">
+										<li><a  href="socialMedia.html">Social Media Marketing </a></li>
+											<li><a  href="ads.html">Paid Ads  </a></li>
+											<li><a  href="webDev.html">Web Development </a></li>
+											<li><a  href="branding.html">Branding </a></li>
+											<li><a  href="photography.html">Photography  </a></li>
+											<li><a  href="videography.html">Videography   </a></li>
+										
+									</li>
+									
+								</ul>
+							</li>
+						</li>
+							<li class="dropdown">
+								<a class="" href="#">News</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a  href="blog.html">News </a></li>
+									<li><a  href="blog-single.html">News Details</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#">Portfolio</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a  href="portfolio.html">Portfolio </a></li>
+									<li><a  href="portfolio-single.html">Portfolio Details</a></li>
+								</ul>
+							</li>
+							<li><a  href="contact.html">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="ori-header-sidebar-search d-flex align-items-center">
+					<!-- <div class="ori-search-btn">
+						<button class="search-box-outer"><i class="fal fa-search"></i></button>
+					</div> -->
+					<div class="ori-sidenav-btn navSidebar-button">
+						<button><i class="fal fa-bars"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="mobile_menu position-relative">
+				<div class="mobile_menu_button open_mobile_menu">
+					<i class="fal fa-bars"></i>
+				</div>
+				<div class="mobile_menu_wrap">
+					<div class="mobile_menu_overlay open_mobile_menu"></div>
+					<div class="mobile_menu_content">
+						<div class="mobile_menu_close open_mobile_menu">
+							<i class="fal fa-times"></i>
+						</div>
+						<div class="m-brand-logo">
+							<a  href="#"><img src="assets/img/bright/main logo/Bright_Media Logo (6).png" alt=""></a>
+						</div>
+						<nav class="mobile-main-navigation  clearfix ul-li">
+							<ul id="m-main-nav" class="nav navbar-nav clearfix">
+								<li class="dropdown ori-megamenu">
+									<a href="index.html">Home</a>
+									<!-- <ul class="dropdown-menu clearfix">
+										<li>
+											<div class="ori-megamenu-content">
+												<div class="ori-megamenu-item-wrap">
+													<div class="row justify-content-center">
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm1.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-1.html">Multi Page</a>
+																		<a target="_blank" href="index-1.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>Digital Studio</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm2.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-2.html">Multi Page</a>
+																		<a target="_blank" href="index-2.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>App Landing</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm3.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-3.html">Multi Page</a>
+																		<a target="_blank" href="index-3.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>Marketing Agency</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm4.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-4.html">Multi Page</a>
+																		<a target="_blank" href="index-4.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>SEO Marketing</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm5.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-5.html">Multi Page</a>
+																		<a target="_blank" href="index-5.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>Insurance</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm6.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-6.html">Multi Page</a>
+																		<a target="_blank" href="index-6.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>Digital Marketing</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm7.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-7.html">Multi Page</a>
+																		<a target="_blank" href="index-7.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>Digital Agency</h3>
+															</div>
+														</div>
+														<div class="col-md-3">
+															<div class="ori-megamenu-item position-relative">
+																<div class="ori-megamenu-item-btn position-relative">
+																	<img src="assets/img/gallery/dm8.jpg" alt="">
+																	<div class="ori-menu-btn-grp text-center">
+																		<a target="_blank" href="index-8.html">Multi Page</a>
+																		<a target="_blank" href="index-8.1.html">One Page</a>
+																	</div>
+																</div>
+																<h3>Agency</h3>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li> -->
+								<li><a  href="about.html">About</a></li>
+								<!-- <li class="dropdown">
+									<a href="#">Shop</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="shop.html">Shop Page </a></li>
+										<li><a href="shop-single.html">Shop Details</a></li>
+										<li><a  href="cart.html">Cart Page</a></li>
+										<li><a  href="check-out.html">Check Out Page</a></li>
+									</ul>
+								</li> -->
+								<a href="#">Services</a>
+								<ul class="dropdown-menu clearfix">
+									
+									<li class="dropdown">
+										<li><a  href="socialMedia.html">Social Media Marketing </a></li>
+											<li><a  href="ads.html">Paid Ads  </a></li>
+											<li><a  href="webDev.html">Web Development </a></li>
+											<li><a  href="branding.html">Branding </a></li>
+											<li><a  href="photography.html">Photography  </a></li>
+											<li><a  href="videography.html">Videography   </a></li>
+										
+									</li>
+									
+								</ul>
+							</li>
+								<li class="dropdown">
+									<a class="" href="#">News</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="blog.html">News </a></li>
+										<li><a  href="blog-single.html">News Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Portfolio</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="portfolio.html">Portfolio </a></li>
+										<li><a  href="portfolio-single.html">Portfolio Details</a></li>
+									</ul>
+								</li>
+								<li><a  href="contact.html">Contact</a></li>
+							</ul>
+							
+						</nav>
+					</div>
+				</div>
+				<!-- /Mobile-Menu -->
+			</div>
+		</div>
+	</header><!-- /header -->
+
+	<!-- Search PopUp -->
+	<div class="search-popup">
+		<button class="close-search style-two"><span class="fal fa-times"></span></button>
+		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
+		<form method="post" action="blog.html">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</form>
+	</div>
+	<!-- Sidebar sidebar Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black">
+			<div class="row loader-area">
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget">
+						X
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+
+					<div class="sidebar-info-contents headline pera-content">
+						<div class="content-inner">
+							<div class="logo">
+								<a href="index-1.html"><img src="assets/img/bright/main logo/Bright_Media Logo (6).png" alt=""></a>
+							</div>
+							<div class="content-box">
+								<h5>About Us</h5>
+								<p class="text">The argument in favor of using filler text goes something like this: If you use real content in the Consulting Process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+							</div>
+							<!-- <div class="gallery-box ul-li">
+								<h5>Gallery</h5>
+								<ul class="zoom-gallery">
+									<li><a href="assets/img/gallery/gl1.png" data-source="assets/img/gallery/gl1.png"><img src="assets/img/gallery/gl1.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl2.png" data-source="assets/img/gallery/gl2.png"><img src="assets/img/gallery/gl2.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl3.png" data-source="assets/img/gallery/gl3.png"><img src="assets/img/gallery/gl3.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl4.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl4.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl5.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl5.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl6.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl6.png" alt=""></a></li>
+								</ul>
+							</div> -->
+							<div class="content-box">
+								<h5>Social Account</h5>
+								<ul class="social-box">
+									<li><a href="https://wa.me/225 0797979387" class="fab fa-whatsapp"></a></li>
+									<li><a href="https://www.instagram.com/brightmedia.tech/" class="fab fa-instagram"></a></li>
+									<li><a href="https://www.linkedin.com/company/brightmedia-tech/" class="fab fa-linkedin"></a></li>
+									<li><a href="https://www.facebook.com/brightmediaglobal/" class="fab fa-facebook-f"></a></li>
+									<li><a href="#" class="fab fa-youtube"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- End of header section
+	============================================= -->
+
+<!-- Start of Breadcrumbs  section
+	============================================= -->
+	<section id="ori-breadcrumbs" class="ori-breadcrumbs-section position-relative" data-background="assets/img/bg/bread-bg.png">
+		<div class="container">
+			<div class="ori-breadcrumb-content text-center ul-li">
+				<h1>News & Blog</h1>
+				<!-- <ul>
+					<li><a href="index.html">orixy</a></li>
+					<li>News & Blog</li>
+				</ul> -->
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div> 
+		</div>
+	</section>	
+<!-- End of Breadcrumbs section
+	============================================= -->
+
+<!-- Start of Blog Feed section
+	============================================= -->
+	<section id="ori-blog-feed" class="ori-blog-feed-section position-relative">
+		<div class="container">
+			<div class="ori-blog-feed-content">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="ori-blog-sidebar">
+							<div class="ori-blog-widget">
+								<div class="search-widget">
+									<h3 class="widget-title">Search</h3>
+									<form action="#">
+										<input type="text" name="search" placeholder="Search your keyword">
+										<button><i class="fal fa-search"></i></button>
+									</form>
+								</div>
+							</div>
+							<div class="ori-blog-widget">
+								<div class="recent-post-widget">
+									<h3 class="widget-title">Related Posts</h3>
+									<div class="ori-recent-post-item d-flex align-items-center">
+										<div class="recent-blog-img">
+											<img src="assets/img/blog/rec1.png" alt="">
+										</div>
+										<div class="recent-blog-text">
+											<span class="date-meta text-uppercase">July 25,2022 </span>
+											<h3><a href="blog-single.html">We Advocate Swapping Screen Time </a></h3>
+										</div>
+									</div>
+									<div class="ori-recent-post-item d-flex align-items-center">
+										<div class="recent-blog-img">
+											<img src="assets/img/blog/rec2.png" alt="">
+										</div>
+										<div class="recent-blog-text">
+											<span class="date-meta text-uppercase">July 28,2022 </span>
+											<h3><a href="blog-single.html">Zechsal Magnesium flakes especially</a> </h3>
+										</div>
+									</div>
+									<div class="ori-recent-post-item d-flex align-items-center">
+										<div class="recent-blog-img">
+											<img src="assets/img/blog/rec3.png" alt="">
+										</div>
+										<div class="recent-blog-text">
+											<span class="date-meta text-uppercase">July 21,2022 </span>
+											<h3><a href="blog-single.html">A Simple Social Media Marketing Checklist</a> </h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ori-blog-widget">
+								<div class="service-widget ul-li-block">
+									<h3 class="widget-title">Services</h3>
+									<ul>
+										<li><a href="blog.html">design<span>(3)</span></a></li>
+										<li><a href="blog.html">Development<span>(7)</span> </a></li>
+										<li><a href="blog.html">Digital Marketing<span>(5)</span></a> </li>
+										<li><a href="blog.html">Software<span>(2)</span></a></li>
+										<li><a href="blog.html">Business<span>(8)</span></a></li>
+										<li><a href="blog.html">seo <span>(4)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="ori-blog-widget">
+								<div class="tag-widget ul-li">
+									<h3 class="widget-title">Tags</h3>
+									<ul>
+										<li><a href="blog.html">design</a></li>
+										<li><a href="blog.html">digital</a></li>
+										<li><a href="blog.html">Content</a></li>
+										<li><a href="blog.html">innovation</a></li>
+										<li><a href="blog.html">marketing</a></li>
+										<li><a href="blog.html">mobile</a></li>
+										<li><a href="blog.html">tech</a></li>
+										<li><a href="blog.html">technology</a></li>
+										<li><a href="blog.html">web</a></li>
+										<li><a href="blog.html">wordpress</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="ori-blog-widget">
+								<div class="gallery-widget ul-li">
+									<h3 class="widget-title">Gallery</h3>
+									<ul class="zoom-gallery">
+										<li><a href="assets/img/blog/blg-f5.png" data-source="assets/img/blog/blg-f5.png"><img src="assets/img/gallery/gl1.png" alt=""></a></li>
+										<li><a href="assets/img/blog/blg-f5.png" data-source="assets/img/blog/blg-f5.png"><img src="assets/img/gallery/gl2.png" alt=""></a></li>
+										<li><a href="assets/img/blog/blg-f5.png" data-source="assets/img/blog/blg-f5.png"><img src="assets/img/gallery/gl3.png" alt=""></a></li>
+										<li><a href="assets/img/blog/blg-f5.png" data-source="assets/img/blog/blg-f5.png"><img src="assets/img/gallery/gl4.png" alt=""></a></li>
+										<li><a href="assets/img/blog/blg-f5.png" data-source="assets/img/blog/blg-f5.png"><img src="assets/img/gallery/gl5.png" alt=""></a></li>
+										<li><a href="assets/img/blog/blg-f5.png" data-source="assets/img/blog/blg-f5.png"><img src="assets/img/gallery/gl6.png" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="ori-blog-add-widget">
+								<a href="contact.html">
+									<img src="assets/img/blog/blg-add.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="ori-blog-feed-post-content">
+							<div class="ori-blog-feed-post-item-wrap">
+								<div class="ori-blog-feed-item">
+									<div class="ori-blog-img">
+										<img src="assets/img/blog/blg-f1.png" alt="">
+									</div>
+									<div class="ori-blog-text pera-content">
+										<div  class="blog-meta text-uppercase">
+											<a class="blog-cate" href="blog.html"><i class="fas fa-file"></i> business</a>
+											<a class="blog-author" href="blog.html"><i class="fas fa-user"></i> orixy</a>
+											<a class="blog-date" href="blog.html"><i class="fas fa-calendar-alt"></i> July 28,2022</a>
+											<a class="blog-comment" href="#"><i class="fas fa-comment"></i> 05</a>
+										</div>
+										<h3><a href="blog-single.html">How to Optimise and Webinar to Earn Leads</a></h3>
+										<p>Research by American Marketing Association states that 60% of marketers include webinars in their marketing strategy. A survey by Curata also backs the importance of webinars where 79% of buyers are ready to share their contact details in exchange for webinar access.</p>
+										<a class="blog-more text-uppercase" href="blog-single.html">CONTINUE READING  <i class="fal fa-arrow-right"></i></a>
+									</div>
+								</div>
+								<div class="ori-blog-feed-item">
+									<div class="ori-blog-img position-relative">
+										<img src="assets/img/blog/blg-f2.png" alt="">
+										<div class="about-play-btn position-absolute">
+											<a class="text-uppercase video_box d-flex align-items-center justify-content-center" href="https://www.youtube.com/embed/Q0S5wCkkSBA?si=4DXXW_DyeNXzOMYD"><i class="fas fa-play"></i></a>
+										</div>
+									</div>                                                                                          
+									<div class="ori-blog-text pera-content">
+										<div  class="blog-meta text-uppercase">
+											<a class="blog-cate" href="blog.html"><i class="fas fa-file"></i> business</a>
+											<a class="blog-author" href="blog.html"><i class="fas fa-user"></i> orixy</a>
+											<a class="blog-date" href="blog.html"><i class="fas fa-calendar-alt"></i> July 28,2022</a>
+											<a class="blog-comment" href="#"><i class="fas fa-comment"></i> 05</a>
+										</div>
+										<h3><a href="blog-single.html">How to Optimise and Webinar to Earn Leads</a></h3>
+										<p>Research by American Marketing Association states that 60% of marketers include webinars in their marketing strategy. A survey by Curata also backs the importance of webinars where 79% of buyers are ready to share their contact details in exchange for webinar access.</p>
+										<a class="blog-more text-uppercase" href="blog-single.html">CONTINUE READING  <i class="fal fa-arrow-right"></i></a>
+									</div>
+								</div>
+								<div class="ori-blog-feed-item">
+									<div class="ori-blog-img">
+										<img src="assets/img/blog/blg-f4.png" alt="">
+									</div>
+									<div class="ori-blog-text pera-content">
+										<div  class="blog-meta text-uppercase">
+											<a class="blog-cate" href="blog.html"><i class="fas fa-file"></i> business</a>
+											<a class="blog-author" href="blog.html"><i class="fas fa-user"></i> orixy</a>
+											<a class="blog-date" href="blog.html"><i class="fas fa-calendar-alt"></i> July 28,2022</a>
+											<a class="blog-comment" href="#"><i class="fas fa-comment"></i> 05</a>
+										</div>
+										<h3><a href="blog-single.html">How to Optimise and Webinar to Earn Leads</a></h3>
+										<p>Research by American Marketing Association states that 60% of marketers include webinars in their marketing strategy. A survey by Curata also backs the importance of webinars where 79% of buyers are ready to share their contact details in exchange for webinar access.</p>
+										<a class="blog-more text-uppercase" href="blog-single.html">CONTINUE READING  <i class="fal fa-arrow-right"></i></a>
+									</div>
+								</div>
+								<div class="ori-blog-feed-item">
+									<div class="ori-blog-img position-relative">
+										<div class="ori-blog-img-slide">
+											<div class="ori-slide-img">
+												<img src="assets/img/blog/blg-f1.png" alt="">
+											</div>
+											<div class="ori-slide-img">
+												<img src="assets/img/blog/blg-f2.png" alt="">
+											</div>
+											<div class="ori-slide-img">
+												<img src="assets/img/blog/blg-f3.png" alt="">
+											</div>
+										</div>
+										<div class="carousel_nav">
+											<button type="button" class="blogFeed-left_arrow"><img src="assets/img/vector/prev.png" alt=""></button>
+											<button type="button" class="blogFeed-right_arrow"><img src="assets/img/vector/next.png" alt=""></button>
+										</div>
+									</div>
+									<div class="ori-blog-text pera-content">
+										<div  class="blog-meta text-uppercase">
+											<a class="blog-cate" href="blog.html"><i class="fas fa-file"></i> business</a>
+											<a class="blog-author" href="blog.html"><i class="fas fa-user"></i> orixy</a>
+											<a class="blog-date" href="blog.html"><i class="fas fa-calendar-alt"></i> July 28,2022</a>
+											<a class="blog-comment" href="#"><i class="fas fa-comment"></i> 05</a>
+										</div>
+										<h3><a href="blog-single.html">How to Optimise and Webinar to Earn Leads</a></h3>
+										<p>Research by American Marketing Association states that 60% of marketers include webinars in their marketing strategy. A survey by Curata also backs the importance of webinars where 79% of buyers are ready to share their contact details in exchange for webinar access.</p>
+										<a class="blog-more text-uppercase" href="blog-single.html">CONTINUE READING  <i class="fal fa-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="ori-pagination-wrap ul-li">
+								<ul>
+									<li><a href="#"><i class="fal fa-arrow-left"></i></a></li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#"><i class="fal fa-arrow-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div> 
+		</div>
+	</section>
+<!-- End of Blog Feed section
+	============================================= -->	
+
+<!-- Start of Footer section
+	============================================= -->
+	<footer id="ori-footer" class="ori-footer-section footer-style-one">
+		<div class="container">
+			<div class="ori-footer-title text-center text-uppercase">
+				<a href="contact.html"><h2>Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2></a>
+			</div>
+			<div class="ori-footer-widget-wrapper">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="logo-widget">
+								<a href="#" class="logo-link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Our Location</h2>
+								<ul>
+									<li><a href="#">Mangalore</a></li>
+									<li><a href="#">Qatar</a></li>
+									<li><a href="#">Africa</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Useful Links</h2>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="contact-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Contact info</h2>
+								<div class="contact-info">
+									<span>Business Centre, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates</span>
+									<!-- <span>(+250)155 69569 365</span> -->
+									<a href="tel:77952 50605"> + 91 77952 50605</a>
+									<a href="tel:225 07 97 97 93 87"> + 225 079797 9387</a>
+									<a href="mailto: info@brightmedia.tech"> info@brightmedia.tech</a>
+									<!-- <span>Office Hours: 8AM - 11PM</span>
+									<span>Sunday - Wekend Day</span> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="newslatter-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Newslatter</h2>
+								<div class="newslatter-form">
+									<form action="#" method="get">
+										<input type="email" name="email" placeholder="Enter mail">
+										<button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="ori-footer-copyright d-flex justify-content-between">
+				<div class="ori-copyright-text">
+					© 2024 All Right Recived - Bright Media 
+				</div>
+				<div class="ori-copyright-social">
+					<a href="https://wa.me/225 0797979387"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.instagram.com/brightmedia.tech/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.facebook.com/brightmediaglobal/"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- End of Footer section
+	============================================= -->		
+
+
+	<!-- For Js Library -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/appear.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<script src="assets/js/twin.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/knob.js"></script>
+	<script src="assets/js/jquery.filterizr.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/rbtools.min.js"></script>
+	<script src="assets/js/rs6.min.js"></script>
+	<script src="assets/js/jarallax.js"></script>
+	<script src="assets/js/jquery.inputarrow.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/jquery.marquee.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>				

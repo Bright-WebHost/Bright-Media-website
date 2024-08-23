@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bright Media </title>
+	<meta name="description" content="Bright Media - Digital Agency">
+	<meta name="keywords" content="advertising, advertising agency, agency, agency theme, business, creative agency, digital, digital advertising, digital agency, digital marketing, digital marketing agency, digital theme, marketing, startup,website,web develop">
+	<meta name="author" content="Themexriver">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex"/>
+	<link rel="shortcut icon" href="assets/img/bright/main logo/B.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/video.min.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	 
+	<link rel="stylesheet" href="assets/css/grid.css">
+	<link rel="stylesheet" href="assets/css/whatsapp.css">
+	<link rel="stylesheet" href="assets/css/new.css">
+	<link rel="stylesheet" href="assets/css/translatelan.css">
+
+	<link rel="stylesheet" href="assets/css/profileCard.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+   
+</head>
+<style>
+	@media only screen and (max-width: 767px) {
+    img[src*="bright/btns"] {
+        transform: rotate(90deg); /* Rotate the images 90 degrees */
+		margin-bottom: 10px !important;
+		
+    }
+}
+.logo-widget {
+    margin-top: 20px;
+    background-image: url('assets/img/Posters/footerlogo.webp'); /* Default image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 180px; /* Adjust height as needed */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .logo-widget {
+        background-image: url('assets/img/bright/logo/BM Logo (1).png'); /* New image for smaller screens */
+        width: 150px; /* Adjust width for smaller screens */
+	
+		margin-bottom: -160px;
+    }
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+ 
+}
+/* img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+} */
+/* .slidert  {
+	opacity: 0.5;
+}
+.slider:hover{
+	opacity: 2.0;
+} */
+
+
+
+/* Pause animation when slider is hovered */
+.slider:hover .slide-track {
+  animation-play-state: paused;
+  opacity: 0.5;
+}
+
+/* Show pause logo when slider is hovered */
+.slider:hover .pause-logo {
+  opacity: 1.0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100%; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  position: relative;
+  margin-right: 10px; /* Add a gap between images */
+}
+
+
+/* Enlarge image and add shadow on hover */
+/* .slider .slide:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+} */
+
+.pause-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+
+.ori-about-circle-progress-item-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Add padding for better spacing */
+	
+}
+
+
+
+
+
+/* Media query for mobile screens */
+/* counts  */
+@media (max-width: 768px) {
+  .ori-about-counter-item-wrap {
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin-left: 10px; /* Adjust margins for smaller screens */
+    margin-right: 20px;
+	
+  }
+ 
+
+  .ori-about-counter-item {
+    flex-basis: 50%; /* Each item takes 50% of the width */
+    margin-bottom: 20px; /* Add some space between items */
+  }
+}
+.graph-outer .inner-text.count-box  {
+  
+  font-size: xx-large;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  margin-top: -10px;
+  
+}
+
+
+
+.ori-sponsor-img img {
+  opacity: 0.5; /* default opacity */
+  transition: opacity 0.3s ease; /* smooth transition */
+}
+
+.ori-sponsor-img img:hover {
+  opacity: 1.0; /* opacity on hover */
+}
+
+
+#name {
+    margin-bottom: 60px;
+    margin-left: 400px;
+}
+
+/* For mobile view */
+@media only screen and (max-width: 767px) {
+    #name {
+        margin-left: 10px; /* Adjust as needed */
+        margin-right: 0; /* Adjust as needed */
+       
+		/* background-color: red; */
+    }
+}/* For large screens */
+#name2 {
+    margin-left: 100px;
+    margin-right: 1px;
+	
+}
+
+/* For mobile view */
+@media only screen and (max-width: 767px) {
+    #name2 {
+        margin-left: 10px; /* Adjust as needed */
+        margin-right: 0; /* Adjust as needed */
+		/* background-color: red; */
+		margin-top: -60px;
+       
+		
+    }
+}
+@media (max-width: 767px) {
+  .ori-team-inner-item {
+    margin-top: -10px; /* Adjust the left margin as needed */
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #sidetitle h2 {
+      margin-top: 70px;
+	  
+	
+
+    }
+	#sidetitle h2 span {
+		
+		font-size: 35px;
+	}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #mapImage img {
+        width: 78% !important;
+	
+    }
+	#btnmobile{
+		margin-top: 20px;
+	}
+}
+@media (max-width: 768px) { /* Adjust the max-width value based on your mobile breakpoint */
+    #counrtyflags {
+        display: none !important;
+    }
+}
+/* team */
+
+/* Base CSS for the Team Section */
+.section-team {
+    font-family: "Poppins", sans-serif;
+    padding: 80px 0;
+}
+
+.section-team .header-section {
+    margin-bottom: 50px;
+}
+
+.section-team .header-section .small-title {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e64ff;
+}
+
+.section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.section-team .single-person {
+    margin-top: 30px;
+    padding: 30px;
+    /* background-color: #f6f9ff; */
+    border-radius: 5px;
+    max-width: 280px; /* Sets a max width for the card */
+    margin-left: auto; /* Centers the card */
+    margin-right: auto; /* Centers the card */
+}
+
+.section-team .single-person:hover {
+    /* background: linear-gradient(to right, #016cec, #00b5f7); */
+}
+
+.section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding 0.3s;
+    width: 180px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    margin-left: auto; /* Centers the image */
+    margin-right: auto; /* Centers the image */
+}
+
+.section-team .single-person:hover .person-image {
+    padding: 12px;
+    border: 4px dashed #2073FE;
+}
+
+.section-team .single-person .person-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+
+.h4style{
+font-size: 24px;
+/* font-weight: 700; */
+font-weight: bold;
+text-align: center;
+display: flex;
+margin-bottom: 15px !important;
+}
+.section-team .single-person .person-info .full-name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    /* font-weight: 700; */
+    color: white;
+}
+
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+	/* margin-top: 20px !important; */
+}
+.section-team .single-person:hover .speciality {
+    color: #2073FE;
+}
+.section-team .single-person:hover .full-name {
+    color: #fff;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 767px) {
+    .section-team .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section-team .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .section-team .single-person {
+        margin-top: 15px;
+        padding: 20px;
+        max-width: 100%; /* Ensures full width on mobile */
+    }
+
+    .section-team .single-person .person-image {
+        width: 150px; /* Adjusts size for mobile */
+        height: 150px; /* Adjusts size for mobile */
+    }
+
+    .section-team .single-person .person-info .full-name {
+        font-size: 20px; /* Adjusts font size for mobile */
+    }
+	.person-info{
+	margin-top: -10px;
+	/* background-color: red; */
+	}
+	.speciality{
+		margin-top: -5px;
+	}
+}
+@media (min-width: 1200px) {
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+/* team */
+</style>
+<body class="ori-digital-studio">
+	<!-- <div id="preloader">
+		<div class="containers">
+			<div class="line"></div>
+			<div class="line d1"></div>
+			<div class="line d2"></div>
+			<div class="line d3"></div>
+			<div class="line d4"></div>
+			<br>
+			
+		 </div>
+		 </div> -->
+		 <div class="up">
+			<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+		</div>
+	<div>
+		<a href="https://wa.me/22597979387" target="_blank" class="whatsapp-btn">
+			<i class="bi bi-whatsapp"></i>
+		  </a>
+	</div>
+		
+		<div class="cursor"></div>
+<!-- Start of header section
+	============================================= -->
+	<header id="ori-header" class="ori-header-section header-style-one">
+		
+		<!-- <iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Language Translate Widget" style="box-sizing: content-box; width: 127px; height: 79px; left: 1007.44px; top: 77px;background-color: red;box-shadow: none;"></iframe> -->
+		
+		<div class="ori-header-content-area">
+			<div class="ori-header-content d-flex align-items-center justify-content-between">
+				
+				<div class="brand-logo">
+					<img src="assets/img/Posters/BM Logo (3).png" alt="img" style="width: 180px;">
+				
+				</div>
+				<div class="ori-main-navigation-area">
+					<nav class="ori-main-navigation clearfix ul-li">
+						<ul id="main-nav" class="nav navbar-nav clearfix">
+							<li class="dropdown ori-megamenu">
+								<a href="index.html">Home</a>
+								<!-- <ul class="dropdown-menu clearfix">
+									<li>
+										<div class="ori-megamenu-content">
+											<div class="ori-megamenu-item-wrap">
+												<div class="row justify-content-center">
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm1.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-1.html">Multi Page</a>
+																	<a target="_blank" href="index-1.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Studio</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm2.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-2.html">Multi Page</a>
+																	<a target="_blank" href="index-2.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>App Landing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm3.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-3.html">Multi Page</a>
+																	<a target="_blank" href="index-3.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Marketing Agency</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm4.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-4.html">Multi Page</a>
+																	<a target="_blank" href="index-4.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>SEO Marketing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm5.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-5.html">Multi Page</a>
+																	<a target="_blank" href="index-5.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Insurance</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm6.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-6.html">Multi Page</a>
+																	<a target="_blank" href="index-6.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Marketing</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm7.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-7.html">Multi Page</a>
+																	<a target="_blank" href="index-7.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Digital Agency</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="ori-megamenu-item position-relative">
+															<div class="ori-megamenu-item-btn position-relative">
+																<img src="assets/img/gallery/dm8.jpg" alt="">
+																<div class="ori-menu-btn-grp text-center">
+																	<a target="_blank" href="index-8.html">Multi Page</a>
+																	<a target="_blank" href="index-8.1.html">One Page</a>
+																</div>
+															</div>
+															<h3>Agency</h3>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li> -->
+							<li><a  href="about.html">About</a></li>
+							<!-- <li class="dropdown">
+								<a href="!#">Shop</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a target="_blank" href="shop.html">Shop Page </a></li>
+									<li><a target="_blank" href="shop-single.html">Shop Details</a></li>
+									<li><a target="_blank" href="cart.html">Cart Page</a></li>
+									<li><a target="_blank" href="check-out.html">Check Out Page</a></li>
+								</ul>
+							</li> -->
+							<li class="dropdown">
+								<a href="#">Services</a>
+								<ul class="dropdown-menu clearfix">
+									
+									<li class="dropdown">
+										<li><a  href="socialMedia.html">Social Media Marketing </a></li>
+											<li><a  href="ads.html">Paid Ads  </a></li>
+											<li><a  href="webDev.html">Web Development </a></li>
+											<li><a  href="branding.html">Branding </a></li>
+											<li><a  href="photography.html">Photography  </a></li>
+											<li><a  href="videography.html">Videography   </a></li>
+										
+									</li>
+									
+								</ul>
+							</li>
+							<!-- <li class="dropdown">
+								<a class="" href="#">News</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a  href="blog.html">News </a></li>
+									<li><a  href="blog-single.html">News Details</a></li>
+								</ul>
+							</li> -->
+							<!-- <li class="dropdown">
+								<a href="#">Portfolio</a>
+								<ul class="dropdown-menu clearfix">
+									<li><a  href="portfolio.html">Portfolio </a></li>
+									<li><a  href="portfolio-single.html">Portfolio Details</a></li>
+								</ul>
+							</li> -->
+							<li><a  href="portfolio.html">Portfolio</a></li>
+							<li><a  href="contact.html">Contact</a></li>
+						
+						</ul>
+						
+							
+						
+					</nav>
+					<!-- <ul style="list-style: none; ;display: flex;justify-content: end; gap: 12px;margin-right: -160px;">
+						<li><span>En</span></li>
+				<li><span>Fr</span></li>
+				<li><span>Ar</span></li>
+					</ul> -->
+				</div>
+				
+				<div class="ori-header-sidebar-search d-flex align-items-center">
+					<div class="ori-search-btn">
+						<button class="search-box-outer" aria-label="search">
+							<!-- <span aria-hidden="true"></span> -->
+						</button>
+						<!-- <a href="#" id="google_translate_element"></a> -->
+
+						<div class="language-bar">
+							<a href="#googtrans(en|en)" class="lang-select" data-lang="en">
+								<div class="language-item">
+									<img class="flagimg" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" />
+									<span class="language-code notranslate">En</span>
+								</div>
+							</a>
+							<a href="#googtrans(en|fr)" class="lang-select" data-lang="fr">
+								<div class="language-item">
+									<img class="flagimg" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/fr.svg" alt="France" />
+									<span class="language-code notranslate">Fr</span>
+								</div>
+							</a>
+							<a href="#googtrans(en|ar)" class="lang-select" data-lang="ar">
+								<div class="language-item">
+									<img class="flagimg" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sa.svg" alt="Saudi Arabia" />
+									<span class="language-code notranslate">Ar</span>
+								</div>
+							</a>
+						</div>
+						
+						
+					</div>
+					<div class="ori-sidenav-btn navSidebar-button">
+						<button class="fal fa-bars" aria-label="Name"> 
+							<!-- <i class="fal fa-bars"></i> -->
+						</button>
+					</div>
+				</div>
+				
+			</div>
+			<div style="display: flex;gap: 28px;margin: 2px;" id="counrtyflags">
+				<img src="assets/img/Posters/flag/india (2).png" alt="flagimg">
+				<img src="assets/img/Posters/flag/ivory-coast (2).png" alt="flagimg">
+				<img src="assets/img/Posters/flag/qatar (2).png" alt="flagimg">
+				<img src="assets/img/Posters/flag/united-arab-emirates.png" alt="flagimg">
+			</div>
+			<div class="mobile_menu position-relative ">
+				<div class="mobile_menu_button open_mobile_menu " >
+					<i class="fal fa-bars"></i>
+				</div>
+				<div class="mobile_menu_wrap">
+					<div class="mobile_menu_overlay open_mobile_menu"></div>
+					<div class="mobile_menu_content">
+						<div class="mobile_menu_close open_mobile_menu">
+							<i class="fal fa-times"></i>
+						</div>
+						<div class="m-brand-logo">
+						<img src="assets/img/Posters/BM Logo (3).png" alt="">
+						<div style="display: flex;gap: 25px;justify-content: center;margin-top: 20px;" >
+							<img src="assets/img/Posters/flag/india (2).png" alt="flagimg">
+							<img src="assets/img/Posters/flag/ivory-coast (2).png" alt="flagimg">
+							<img src="assets/img/Posters/flag/qatar (2).png" alt="flagimg">
+							<img src="assets/img/Posters/flag/united-arab-emirates.png" alt="flagimg">
+						</div>
+						</div>
+						
+						<nav class="mobile-main-navigation  clearfix ul-li">
+							<ul id="m-main-nav" class="nav navbar-nav clearfix">
+								<li><a  href="index.html">home</a></li>
+									
+								<li><a  href="about.html">About</a></li>
+								
+								<li class="dropdown">
+									<a href="#">Services</a>
+									<ul class="dropdown-menu clearfix">
+										
+										<li >
+											<li><a  href="socialMedia.html">Social Media Marketing </a></li>
+											<li><a  href="ads.html">Paid Ads  </a></li>
+											<li><a  href="webDev.html">Web Development </a></li>
+											<li><a  href="branding.html">Branding </a></li>
+											<li><a  href="photography.html">Photography  </a></li>
+											<li><a  href="videography.html">Videography   </a></li>
+											
+										</li>
+										
+									</ul>
+								</li>
+								<!-- <li class="dropdown">
+									<a class="" href="#">News</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="blog.html">News </a></li>
+										<li><a  href="blog-single.html">News Details</a></li>
+									</ul>
+								</li> -->
+								<!-- <li class="dropdown">
+									<a href="#">Portfolio</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a  href="portfolio.html">Portfolio </a></li>
+										<li><a  href="portfolio-single.html">Portfolio Details</a></li>
+									</ul>
+								</li> -->
+								<li><a  href="portfolio.html">Portfolio</a></li>
+								<li><a  href="contact.html">contact</a></li>
+								
+								
+							</ul>
+							
+						</nav>
+						
+					</div>
+				
+				</div>
+				
+				<!-- /Mobile-Menu -->
+			</div>
+		</div>
+	</header><!-- /header -->
+
+	<!-- Search PopUp -->
+	<!-- <div class="search-popup">
+		<button class="close-search style-two"><span class="fal fa-times"></span></button>
+		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
+		<form method="post" action="#">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</form>
+	</div> -->
+	<!-- Sidebar sidebar Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black">
+			<div class="row loader-area">
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget">
+						X
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+
+					<div class="sidebar-info-contents headline pera-content">
+						<div class="content-inner">
+							<div class="logo">
+								<img src="assets/img/Posters/BM Logos.webp" alt="">
+							</div>
+							<div class="content-box">
+								<h5>Services</h5>
+								<ul style="list-style: none;line-height: 250%;">
+									        <li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a href="socialMedia.html">Social Media Marketing</a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a href="ads.html">Paid Ads  </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="webDev.html">Web Development </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="branding.html">Branding </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="photography.html">Photography  </a></li>
+											<li> <i class="fal fa-arrow-right"></i>  &#160; &#160;<a  href="videography.html">Videography   </a></li>
+								</ul>
+							</div>
+							<!-- <div class="gallery-box ul-li">
+								<h5>Gallery</h5>
+								<ul class="zoom-gallery">
+									<li><a href="assets/img/gallery/gl1.png" data-source="assets/img/gallery/gl1.png"><img src="assets/img/gallery/gl1.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl2.png" data-source="assets/img/gallery/gl2.png"><img src="assets/img/gallery/gl2.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl3.png" data-source="assets/img/gallery/gl3.png"><img src="assets/img/gallery/gl3.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl4.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl4.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl5.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl5.png" alt=""></a></li>
+									<li><a href="assets/img/gallery/gl6.png" data-source="assets/img/gallery/gl4.png"><img src="assets/img/gallery/gl6.png" alt=""></a></li>
+								</ul>
+							</div> -->
+							
+							<div class="content-box">
+								<h5>Social Account</h5>
+								<ul class="social-box">
+									<li><a href="https://wa.me/225 0797979387" class="fab fa-whatsapp"></a></li>
+									<li><a href="https://www.instagram.com/brightmedia.tech/" class="fab fa-instagram"></a></li>
+									<li><a href="https://www.linkedin.com/company/brightmedia-tech/" class="fab fa-linkedin"></a></li>
+									<li><a href="https://www.facebook.com/brightmediaglobal/" class="fab fa-facebook-f"></a></li>
+									<li><a href="https://www.youtube.com/@MoideenShahil" class="fab fa-youtube"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- End of header section
+	============================================= -->
+
+<!-- Start of Breadcrumbs  section
+	============================================= -->
+	<section id="ori-breadcrumbs" class="ori-breadcrumbs-section position-relative" data-background="assets/img/bg/bread-bg.png">
+		<div class="container">
+			<div class="ori-breadcrumb-content text-center ul-li">
+				<h1>About Us</h1>
+				<!-- <ul>
+					<li><a href="index.html">orixy</a></li>
+					<li>About Us</li>
+				</ul> -->
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>	
+<!-- End of Breadcrumbs section
+	============================================= -->
+
+<!-- Start of About Play  section
+	============================================= -->
+	<section id="ori-about-play" class="ori-about-play-section position-relative" style="margin-bottom: -60px;">
+		<div class="container">
+			<div class="ori-about-play-top-content d-flex justify-content-between align-items-center">
+				<div class="ori-inner-section-title">
+					<span class="sub-title text-uppercase">About us</span>
+					<h2> Empowering Digital Success</h2>
+				</div>
+				<div class="ori-about-play-top-text">
+					Tailored digital strategies and innovative solutions to drive success in today's dynamic digital ecosystem
+				</div>
+			</div>
+			<div class="ori-about-play-area position-relative">
+				<div class="ori-about-play-img">
+					<img src="assets/img/Posters/aboutus.jpg" alt="Images" style="width: 100%;">
+				</div>
+				<div class="about-play-btn position-absolute">
+					<a class="text-uppercase video_box d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=wjdBaZj7AyU">Play</a>
+				</div>
+			</div>
+
+			<!-- map -->
+			<div style="display: flex;justify-content: center; margin-top: 50px;" id="mapImage" >
+				<img src="assets/img/Posters/maps.png" alt="map" style="width: 600px;" />
+			</div>
+			<div class="ori-about-counter-area" style="margin-top: -30px;">
+				<div id="sidetitle">
+					<h2 style="font-size:40px; font-weight: 700; text-transform: uppercase; margin-left: -20px;">Transforming <span style="-webkit-text-fill-color: transparent;
+						-webkit-text-stroke-width: 1px;
+						-webkit-text-stroke-color: #fff;">Brands, Maximizing</span></h2>
+				</div>
+				<div class="ori-about-counter-item-wrap d-flex justify-content-between" style="margin-left:50px;margin-right:50px;">
+					
+					<div class="ori-about-counter-item pera-content">
+						<h3><span class="counter">320 </span> +</h3>
+						<p  style="color: #2073FE ;">// ADS CAMPAIGNS</p>
+					</div>
+					<div class="ori-about-counter-item pera-content">
+						<h3><span class="counter">  43  </span>    M+</h3>
+						<p  style="color: #2073FE ;">  // REACH</p>
+					</div>
+					<div class="ori-about-counter-item pera-content">
+						<h3><span class="counter">   40 </span > +</h3>
+						<p  style="color: #2073FE ;">    //  BRANDS</p>
+					</div>
+					<div class="ori-about-counter-item pera-content">
+						<h3><span class="counter">   10 </span > K</h3>
+						<p  style="color: #2073FE ;">  // CREATIVES</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>		
+<!-- End of About Play   section
+	============================================= -->
+
+
+<!-- Start of About Circle Progress  section
+	============================================= -->
+	<section id="ori-about-circle-progress" class="ori-about-circle-progress-section position-relative">
+		<div class="container">
+			<div class="ori-circle-progress-top-content d-flex justify-content-between align-items-center">
+				<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+					
+					<h2>Breaking Down the Marketing <span>Strategy Equation</span></h2>
+					
+				</div>
+				<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms" id="btnmobile">
+					<a href="portfolio.html">Our services</a>
+				</div>
+			</div>
+			<div class="ori-about-circle-progress-item-wrap d-flex align-items-center justify-content-between">
+				<div class="ori-about-circle-progress-item">
+					<div class="counter-boxed text-center headline position-relative">
+						<div class="graph-outer">
+							<input type="text" class="dial" data-fgColor="#0061FF" data-bgColor="#fff" data-width="130" data-height="130" data-linecap="round"  value="30" >
+							<div class="inner-text count-box"><span class="count-text" data-stop="30" data-speed="4500"></span>%</div>
+						</div>
+						<h3  style="font-weight: bolder;text-transform: uppercase;">Planning </h3>
+					</div>
+				</div>
+				<img src="assets/img/bright/btns/down.png" alt="" style="height: 60px; margin-bottom: 50px;margin-left:20px ;margin-right:30px ;"/>
+				<div class="ori-about-circle-progress-item">
+					<div class="counter-boxed text-center headline position-relative">
+						<div class="graph-outer">
+							<input type="text" class="dial" data-fgColor="#0061FF" data-bgColor="#fff" data-width="130" data-height="130" data-linecap="round"  value="25" >
+							<div class="inner-text count-box" style="margin-top: -10px;"><span class="count-text" data-stop="25" data-speed="4500"></span>%</div>
+						</div>
+						<h3 style="font-weight: bolder;text-transform: uppercase;">Data  Analysis</h3>
+					</div>
+				</div>
+				<!-- Repeat for other progress bars -->
+				<img src="assets/img/bright/btns/down.png" alt="" style="height: 60px; margin-bottom: 50px;;margin-left:20px ;margin-right:10px ;"/>
+				<div class="ori-about-circle-progress-item">
+					<div class="counter-boxed text-center headline position-relative" >
+						<div class="graph-outer">
+							<input type="text" class="dial" data-fgColor="#0061FF" data-bgColor="#fff" data-width="130" data-height="130" data-linecap="round"  value="30" >
+							<div class="inner-text count-box"><span class="count-text" data-stop="30" data-speed="4500"></span>%</div>
+						</div>
+						<h3 style="font-weight: bolder;margin-top: -30px; text-transform: uppercase;"><br/>Conversion Optimization</h3>
+					</div>
+				</div>
+				<!-- Repeat for other progress bars -->
+				<img src="assets/img/bright/btns/down.png" alt="" style="height: 60px; margin-bottom: 50px;"/>
+				<div class="ori-about-circle-progress-item">
+					<div class="counter-boxed text-center headline position-relative" style="margin-top: 20px;">
+						<div class="graph-outer">
+							<input type="text" class="dial" data-fgColor="#0061FF" data-bgColor="#fff" data-width="130" data-height="130" data-linecap="round"  value="15" >
+							<div class="inner-text count-box" ;><span class="count-text" data-stop="15" data-speed="4500" ></span>%</div>
+						</div>
+						<h3  style="font-weight: bolder;margin-bottom: 20px;text-transform: uppercase;">Scalability Solutions</h3>
+					</div>
+				</div>
+				<!-- Repeat for other progress bars -->
+				<img src="assets/img/bright/btns/down.png" alt="" style="height: 60px; margin-bottom: 50px;"/>
+				<div class="ori-about-circle-progress-item">
+					<div class="counter-boxed text-center headline position-relative">
+						<div class="graph-outer">
+							<input type="text" class="dial" data-fgColor="#0061FF" data-bgColor="#fff" data-width="260" data-height="260" data-linecap="round"  value="100" >
+							<div class="inner-text count-box" ><span class="count-text" data-stop="100" data-speed="5000"></span>%</div>
+						</div>
+						<h3  style="font-weight: bolder;text-transform: uppercase;">Marketing Strategy</h3>
+					</div>
+				</div>
+				<!-- Repeat for other progress bars -->
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>		
+<!-- End of About Circle Progress  section
+	============================================= -->
+
+
+
+<!-- mission  -->
+<!-- 
+<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
+	<div class="ori-vector-bg position-absolute">
+		<img src="assets/img/vector/tst-vector1.png" alt="">
+	</div>
+	<div class="container">
+		<div class="ori-testimonial-content-1 position-relative">
+			<div class="ori-testimonial-title text-center text-uppercase">
+				<h2 style="color: white;">Mission <span style="color: blue;">&</span>  Vision</h2>
+			</div>
+			<div class="ori-testimonial-slider-1">
+				
+				<div class="ori-testimonial-item-area">
+					<div class="ori-testimonial-item-1">
+						<div class="ori-testimonial-text text-center pera-content">
+							<h2>Mission </h2>
+							<br/><br/>
+							<p>“we believe that building emotional connections with audiences is crucial for establishing a strong relationship between them and a brand. To achieve this, we create engaging content that educates, entertains, and adds value to the audience. This approach helps in fostering trust and ultimately leads to better business performance.”
+							</p> -->
+							<!-- <div class="ori-testimonial-author text-center text-uppercase">
+								<h4>Hahimlam Dirat</h4>
+								<span>ui/ux Designer</span>
+							</div> -->
+						<!-- </div>
+					</div>
+				</div>
+				<div class="ori-testimonial-item-area">
+					<div class="ori-testimonial-item-1">
+						<div class="ori-testimonial-text text-center pera-content">
+							<h2>Vision </h2>
+							<br/><br/>
+							<p>“Vision As a marketing management company, our goal is to help our clients achieve business growth by leveraging our expertise in digital technologies. We aim to bridge the gap between where our clients currently stand and their future potential, guiding them along the way.”
+							</p> -->
+							<!-- <div class="ori-testimonial-author text-center text-uppercase">
+								<h4>Hahimlam Dirat</h4>
+								<span>ui/ux Designer</span>
+							</div> -->
+						<!-- </div>
+					</div>
+				</div> -->
+				<!-- <div class="ori-testimonial-item-area">
+					<div class="ori-testimonial-item-1">
+						<div class="ori-testimonial-text text-center pera-content">
+							<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+							</p>
+							<div class="ori-testimonial-author text-center text-uppercase">
+								<h4>Hahimlam Dirat</h4>
+								<span>ui/ux Designer</span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			<!-- </div>
+			<div class="carousel_nav">
+				<button type="button" class="testi-left_arrow"><img src="assets/img/vector/prev.png" alt=""></button>
+				<button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt=""></button>
+			</div>
+		</div>
+	</div>
+	<div class="line_animation">
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+		<div class="line_area"></div>
+	</div>
+</section> -->
+<!-- vission  -->
+
+<!-- Start of Team section
+	============================================= -->
+
+	<!-- <div class="ori-team-top-content-1 d-flex justify-content-between align-items-center" >
+		<div class="ori-section-title-1 text-uppercase">
+			<h2>Meet our team of <span>professional</span></h2>
+		</div>
+		<div class="ori-btn-1 text-uppercase">
+			<a href="contact.html">Contact</a>
+		</div>
+	</div> -->
+
+
+	<!-- <div class="profileCard">
+		<div class="card" style="width: 15rem;">
+			<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+			<div class="card-body " >
+			  <h5 class="card-title" >Shammas Kalladath</h5>
+			  <p class="card-text" >FOUNDER, CEO</p>
+			  <div class="hrline"></div>
+			</div>
+			
+			<div  class="profileCardSub">
+				<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+			</div>
+			
+		  </div>
+	
+		</div> -->
+	<!-- two -->
+		<!-- <div class="profileCard">
+		<div class="card" style="width: 15rem;">
+			<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+			<div class="card-body " >
+			  <h5 class="card-title" >Shammas Kalladath</h5>
+			  <p class="card-text" >FOUNDER, CEO</p>
+			  <div class="hrline"></div>
+			</div>
+			
+			<div  class="profileCardSub">
+				<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+			</div>
+			
+		  </div>
+		<div class="card" style="width: 15rem;">
+			<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+			<div class="card-body " >
+			  <h5 class="card-title" >Shammas Kalladath</h5>
+			  <p class="card-text" >FOUNDER, CEO</p>
+			  <div class="hrline"></div>
+			</div>
+			
+			<div  class="profileCardSub">
+				<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+			</div>
+			
+		  </div>
+		<div class="card" style="width: 15rem;">
+			<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+			<div class="card-body " >
+			  <h5 class="card-title" >Shammas Kalladath</h5>
+			  <p class="card-text" >FOUNDER, CEO</p>
+			  <div class="hrline"></div>
+			</div>
+			
+			<div  class="profileCardSub">
+				<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+			</div>
+			
+		  </div>
+	
+		</div> -->
+	
+		<!-- tree -->
+		<!-- <div class="profileCard">
+			<div class="card" style="width: 15rem;">
+				<img src="assets/img/Posters/Sajeel (1).jpg" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+			<div class="card" style="width: 15rem;">
+				<img src="assets/img/Posters/Shakeeb Gunda.jpg" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+			<div class="card" style="width: 15rem;">
+				<img src="assets/img/Posters/Ismail (1).jpg" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+			<div class="card" style="width: 15rem;">
+				<img src="assets/img/Posters/Suraj (3).jpg" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+		
+			</div>
+	 -->
+
+			<!-- team -->
+			<section class="section-team">
+				<div class="container">
+					<!-- Start Header Section -->
+					<div class="row justify-content-center text-center">
+						<div class="col-md-8 col-lg-6">
+							<div class="header-section">
+								<h3 class="small-title">Our Team</h3>
+								<h2 class="title">Meet the Team Behind Our Success</h2>
+							</div>
+						</div>
+					</div>
+					<!-- / End Header Section -->
+					<div class="row" style="display: flex;justify-content: center;">
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/sadik.webp" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-html5"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h4 class="h4style">Aboobakker Sadik</h4>
+									<!-- <h3 class="full-name" >Aboobakker Sadik</h3> -->
+									<!-- <h4>Aboobakker Sadik</h4> -->
+									<span class="speciality">Owner</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets\img\Posters\BM team\Shahil.png" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-html5"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Moideen Shahil</h3>
+									<span class="speciality">Founder & CEO </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="display: flex;justify-content: center;">
+						<!-- Start Single Person -->
+						
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/shamal.png" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-html5"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<!-- <h3 class="full-name">Shamal Hussain</h3> -->
+									<h3 class="full-name">Shamal Hussain</h3>
+									<span class="speciality">Manager </span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/Siddiqui.png" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-html5"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Shoaib Zafar</h3>
+									<span class="speciality">COO</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/sajeel.webp" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-html5"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Sajeel</h3>
+									<span class="speciality">GRAPHIC DESIGNER</span>
+								</div>
+							</div>
+						</div>
+						<!-- / End Single Person -->
+						<!-- Start Single Person -->
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/Shakeeb (1).webp" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-wordpress-simple"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Ismail Shakeeb</h3>
+									<span class="speciality">VIDEO EDITOR</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						
+						<!-- / End Single Person -->
+						<!-- Start Single Person -->
+						<div class="row" >
+						<div class="col-sm-6 col-lg-3 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/suraj poojari.webp" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-angular"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Suraj Poojari</h3>
+									<span class="speciality" style="text-align: center;">SOCIAL MEDIA MANAGER</span>
+								</div>
+							</div>
+						</div>
+						<!-- / End Single Person -->
+						<!-- Start Single Person -->
+						<div class="col-sm-6 col-lg-3 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/ismail.webp" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-js"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Ismail </h3>
+									<span class="speciality">WEB DEVELOPER</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/Alshay D’Silva.webp" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-wordpress-simple"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Alshay D’Silva </h3>
+									<span class="speciality">VIDEO EDITOR</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/Raif.png" alt="">
+									<!-- <span class="icon">
+										<i class="fab fa-html5"></i>
+									</span> -->
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Raif</h3>
+									<span class="speciality">Intern</span>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-sm-6 col-lg-3 col-xl-3">
+							<div class="single-person">
+								<div class="person-image">
+									<img src="assets/img/Posters/BM team/Sulaiman.webp" alt="">
+								</div>
+								<div class="person-info">
+									<h3 class="full-name">Souleymane</h3>
+									<span class="speciality">Photographer/Videographer</span>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!-- / End Single Person -->
+					</div>
+				</div>
+			</section>
+		
+			<!-- team -->
+			
+		<!-- tree -->
+		<!-- <div class="profileCard">
+			<div class="card" style="width: 15rem;">
+				<img src="assets/img/Posters/Raief.jpg" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+			<div class="card" style="width: 15rem;">
+				<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+			<div class="card" style="width: 15rem;">
+				<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+			<div class="card" style="width: 15rem;">
+				<img src="https://vybinex.com/static/cf686095d33eda43a0779ad0f5ffdbfc/94674/03.webp" class="card-img-top" alt="...">
+				<div class="card-body " >
+				  <h5 class="card-title" >Shammas Kalladath</h5>
+				  <p class="card-text" >FOUNDER, CEO</p>
+				  <div class="hrline"></div>
+				</div>
+				
+				<div  class="profileCardSub">
+					<a href="https://wa.me/225 0797979387" style="margin: 20px;"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/ " ><i class="fab fa-linkedin"></i></a>
+				</div>
+				
+			  </div>
+		
+			</div> -->
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+	<section id="ori-team-1" class="ori-team-section-1 position-relative" >
+		<div class="ori-team-content-area" >
+			<div class="container" >
+				<div class="ori-team-top-content-1 d-flex justify-content-between align-items-center" >
+					<div class="ori-section-title-1 text-uppercase">
+						<h2>Meet our team of <span>professional</span></h2>
+					</div>
+					<div class="ori-btn-1 text-uppercase">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<div class="ori-team-content-1">
+					<div class="row" >
+						<div class="col-lg-3 col-md-6 "  id="name" >
+							<div class="ori-team-inner-item position-relative" >
+								<div class="ori-team-img">
+									<img src="https://vybinex.com/static/25f7c338b452f5b71367cda8a40466bb/94674/01.webp" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block; color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-whatsapp"></i></a>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="row" >
+					<div class="col-lg-3 col-md-6 "  id= "name2"  >
+							<div class="ori-team-inner-item position-relative" >
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm1.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block; color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+					<div class="col-lg-3 col-md-6 " style="margin-left: 10px;margin-right: 10px;">
+							<div class="ori-team-inner-item position-relative" >
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm1.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block; color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+					<div class="col-lg-3" style="margin-left: 10px;margin-right: 10px;">
+							<div class="ori-team-inner-item position-relative" >
+								<div class="ori-team-img">
+									<img src="https://vybinex.com/static/25f7c338b452f5b71367cda8a40466bb/94674/01.webp" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block; color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				
+
+					
+				</div>
+				
+
+				<div class="ori-team-content-0" >
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm1.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm2.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm3.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm3.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="ori-team-content-01">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm1.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm2.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm3.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="ori-team-inner-item position-relative">
+								<div class="ori-team-img">
+									<img src="assets/img/team/tm3.png" alt="">
+								</div>
+								<div class="ori-team-text text-center position-absolute">
+									<h4 style="font-size: 24px;font-weight: 700;padding-bottom: 8px;">Alextina Ditarson</h4>
+									<p style="font-size: 12px;letter-spacing: 0.1em;display: inline-block;
+color: var(--base-color-1)">GRAPHIC DESIGNER</p>
+								</div>
+								<div class="ori-team-social text-center position-absolute">
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section> -->
+<!-- End of Team section
+	============================================= -->
+	<!-- <div class="ori-sponsor-title text-uppercase text-center">
+		<h3><i></i> <span>Trusted by</span> <i></i> </h3>
+	</div>
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/1 (1).png" alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/12(1).png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/16.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/19.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/2 (1).png"  alt="" />
+    </div>
+   
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/5.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/8.png"  alt="" />
+    </div>
+    
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/horeca lgo.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/instanbul global.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/logo.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/SECOND CUP.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/SS Traders.png"  alt="" />
+    </div>
+    <div class="slide">
+      <img src="assets/img/bright/clientsLogo/Zeeba Rice Logo.png" alt="" />
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+
+
+
+
+<!--  -->
+<!-- <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal"><br/>
+	<div >
+		<h2 style="font-size:3a0px; font-weight: 700; text-transform: uppercase ; text-align: center;">Trusted  <span style="-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;"> by</span></h2>
+			<br/>
+	</div>
+	<div class="customer-logos slider" >
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/2__1_-removebg-preview.png" alt="Kinderhotel Aschauerhof" height="150" width="150" ></a></div>
+	  
+	 
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Ar Raafi.png" alt="Kinderhotel Aschauerhof" height="150" width="150"   style="margin-top: 30px;"></a></div>
+	  
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Azeem.png" alt="Kinderhotel Aschauerhof" height="200" width="150"  style="margin-top: 40px;" ></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Zeeba Rice Logo.png" alt="Testerhof" style="margin-top: 40px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/SS.png"  style="margin-top: 60px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Duracell-logo.png"  style="margin-top: 35px;" ></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Tonino.png"  style="margin-top: 35px;" ></a></div>
+
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Olam Agri.png" height="150" width="150"  style="margin-top: 60px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Giti-Tire-logo-.webp" height="150" width="150"  style="margin-top: 40px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Bajaj-Logo-2.png" height="150" width="150"  style="margin-top: 40px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/horeca lgo.png" height="150" width="150"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/13 (1).png" height="150" width="150"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/15 (2).png" height="150" width="150"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/16.png" height="150" width="150" alt="Tannenmuehle"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/19.png" height="150" width="150" alt="Loeffele"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/2 (14).png" alt="Obereggen" height="150" width="150"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/5.png" alt="Ottonenhof" height="150" width="150"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Metroways.png" alt="Leiners"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/Amore.png" alt="Seitenalm" height="150" width="150"  style="margin-top: 40px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/12(1).png" alt="Testerhof" height="150" width="150"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/logo.png" alt="Testerhof" height="150" width="150" style="margin-top: 40px;"></a></div>
+	  <div class="slide-in-right slide"><img src="assets/img/bright/clientsLogo/SECOND CUP.png" height="150" width="150"></a></div>
+  </section>
+   -->
+
+
+<!-- new logos  -->
+  <section>
+	<div class="main-container">
+	
+		<h2 style="font-size:30px; font-weight: 700; text-transform: uppercase ; text-align: center; ">Our <span style="-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;"> Clients</span></h2>
+		<ul class="grid-wrapper" >
+
+		
+			<li class="imges" id="one"><img src="assets/img/Posters/logo/Honda.webp" alt=""></li>
+			<li  class="imges" id="one"><img src="assets/img/Posters/logo/Duracell.webp" alt=""></li>
+			<li  class="imges" id="one"><img src="assets/img/Posters/logo/Bajaj.webp" alt=""></li>
+			<li  class="imges" id="two"><img src="assets/img/Posters/logo/giti.webp" alt=""></li>
+			<li  class="imges" id="two"><img src="assets/img/Posters/logo/olam.webp" alt=""></li>
+			
+			
+			<li  class="imges" ><img src="assets/img/Posters/logo/Kaisar.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Ml.webp"  alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Paulshark.webp"  alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Second cup.webp" alt=""></li>
+			<li  class="imges" ><img src="assets/img/Posters/logo/Horeca.webp" alt=""></li>
+
+			<li  class="imges" ><img src="assets/img/Posters/logo/metroways.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/amore.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/asia mart.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/tonino.webp" alt=""></li>
+			<li  class="imges" ><img src="assets/img/Posters/logo/Azim.webp" alt=""></li>
+
+			<li  class="imges" ><img src="assets/img/Posters/logo/proconcept.webp"  alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Kenny's.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Padel.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/streetfood.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Istanbul.webp" alt=""></li>
+
+
+			<li  class="imges" ><img src="assets/img/Posters/logo/s.s trading.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Zeeba.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/babe.webp" alt=""></li>
+			<li  class="imges"><img src="assets/img/Posters/logo/Hafil.webp" alt=""></li>
+			<li  class="imges" ><img src="assets/img/Posters/logo/webs.webp" alt=""></li>
+
+			 <li class="imges" ><img src="assets/img/Posters/logo/sabs.webp" alt=""></li>
+			 <li  class="imges" ><img src="assets/img/Posters/logo/Marrouche.webp"  alt=""></li>
+			 <li  class="imges" ><img src="assets/img/Posters/logo/afri.webp" alt=""></li>
+			 <li  class="imges" ><img src="assets/img/Posters/logo/sept.webp" alt=""></li>
+			 <li  class="imges" ><img src="assets/img/Posters/logo/paramount.webp" alt=""></li>
+		
+			 <li  class="imges"><img src="assets/img/Posters/logo/ar-raafi.webp" alt=""></li>
+			 <li  class="imges" ><img src="assets/img/bmclientslogo/Euro.png" alt=""></li>
+			 <li  class="imges" ><img src="assets/img/Posters/instabul.png" alt=""></li>
+			 <li  class="imges" style="margin-bottom: 60px;" ><img src="assets/img/bmclientslogo/Distrimax.jpg" alt=""></li>
+			 <li  class="imges" style="margin-bottom: 60px;" ><img src="assets/img/Posters/mcm1.png" alt=""></li>
+		
+		</ul>
+	</div>
+</section>
+
+
+	
+<!-- Start of Sponsor section
+	============================================= -->
+	 <!-- <section id="ori-sponsor-1" class="ori-sponsor-section-1 position-relative">
+		<div class="container">
+			<div class="ori-sponsor-title text-uppercase text-center">
+				<h3><i></i> <span>Trusted by</span> <i></i> </h3>
+			</div>
+			<div class="ori-sponsor-content">
+				<div class="ori-sponsor-slider">
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img" >
+							<a href="#" >
+								<img src="assets/img/clientslogos/Azeem.png" alt="" style="height: 70px;" >
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Amore.png" alt="" style="height: 70px;">
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Duracell-logo.png" alt="" style="height: 80px;">
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Honda+.png" alt="" style="height: 80px; width: 100%;">
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Istanbul Global.png" alt="" style="height: 80px;">
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Motorland.png" alt="" style="height: 80px;">
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/SS.png" alt="" style="height: 60px;" >
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Tonino.png" alt="" style="height: 40px;" >
+							</a>
+						</div>
+					</div>
+					<div class="ori-sponsor-item">
+						<div class="ori-sponsor-img">
+							<a href="#">
+								<img src="assets/img/clientslogos/Zeeba Rice Logo.png" alt="" style="height: 90px;" >
+							</a>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div> 
+	</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>	 -->
+<!-- End of Sponsor section
+	============================================= -->			
+
+
+	<!-- <div class="wrapper"> -->
+		<!-- <div >
+			<h2 style="font-size:3a0px; font-weight: 700; text-transform: uppercase ; text-align: center;">Trusted  <span style="-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: #fff;"> by</span></h2>
+				<p>Beautiful pictures and more</p>
+		</div> -->
+		<!-- new updated  correct format -->
+			<!-- <div class="carousel">
+			  <div><img src="assets/img/clientslogos/Azeem.png"></div>
+			  <div><img src="assets/img/clientslogos/Amore.png"></div>
+			  <div><img src="assets/img/clientslogos/Bajaj.png"></div>
+			  <div><img src="assets/img/clientslogos/Duracell-logo.png"></div>
+			  <div><img src="assets/img/clientslogos/Honda+.png"></div>
+			  <div><img src="assets/img/clientslogos/Motorland.png"></div>
+			  <div><img src="assets/img/clientslogos/Kaiser.png"></div>
+			  <div><img src="assets/img/clientslogos/Olam Agri.png"></div>
+			  <div><img src="assets/img/clientslogos/SS.png"></div>
+			  <div><img src="assets/img/clientslogos/Tonino.png"></div>
+			  <div><img src="assets/img/clientslogos/Zeeba Rice Logo.png" ></div>
+			  <div><img src="assets/img/clientslogos/15 (3).png" ></div>
+			  <div><img src="assets/img/clientslogos/Sabs Food.png" ></div>
+			  <div><img src="assets/img/clientslogos/Ar Raafi.png" ></div>
+			  <div><img src="assets/img/clientslogos/Metroways.png" style="height: 100px;"></div>
+			  <div><img src="assets/img/clientslogos/Marrouche.png" style="height: 80px;"></div> 
+			   <div><img src="assets/img/clientslogos/Istanbul Global.png"></div>
+			
+			 
+			</div> -->
+	  <!-- </div> -->
+<!-- Start of Footer section
+	============================================= -->
+	<footer id="ori-footer" class="ori-footer-section footer-style-one">
+		<div class="container">
+			<!-- <div class="ori-footer-title text-center text-uppercase" style="max-width: 500px; margin: 0 auto;margin-top: -40px;">
+				<a href="contact.html" style="display: block;">
+					<h2 style="font-size: 28px;">Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2>
+				</a>
+			</div> -->
+			<div class="ori-footer-title text-center text-uppercase">
+				<a href="contact.html"><h2>Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2></a>
+			</div>
+			<div class="ori-footer-widget-wrapper" >
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="logo-widget">
+								<a href="#" class="logo-link" aria-label="Home">
+									<!-- Your logo image or text goes here -->
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-1 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Useful Links</h2>
+								<ul>
+									<li><a href="index.html" style="color: #A8A8A8;">Home</a></li>
+									<li><a href="about.html" style="color: #A8A8A8;">About Us</a></li>
+									<li><a href="portfolio.html" style="color: #A8A8A8;">Portfolio</a></li>
+									<li><a href="contact.html" style="color: #A8A8A8;">Contact</a></li>
+									<!-- <li><a href="#">Germany</a></li>
+									<li><a href="#">India</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">India</h2>
+								<ul>
+									<li ><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li style="color: #A8A8A8;">2nd floor, Regal Park, Mission Street, State Bank, Mangalore-575001- Karnataka</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Ivory Coast </h2>
+								<ul>
+									<li><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li><a href="tel:225 07 97 97 93 87" style="color: #fff;font-weight: 300;"> + 225 079797 9387</a></li>
+									<li style="color: #A8A8A8;">Ivory Coast 
+										11 BP 2498-11, 4th Floor, Waimea Bldg, Marcory Boulevard VGE, Abidjan, Côte d'Ivoire</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">UAE</h2>
+								<ul>
+									<li><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li><a href="tel:225 07 97 97 93 87" style="color: #fff;font-weight: 300;"> + 225 079797 9387</a></li>
+									<li style="color: #A8A8A8;">Business Centre, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Qatar</h2>
+								<ul>
+									<li><a href="tel:77952 50605" style="color: #fff;font-weight: 300;"> + 91 77952 50605</a></li>
+									<li><a href="tel:225 07 97 97 93 87" style="color: #fff;font-weight: 300;"> + 225 079797 9387</a></li>
+									<li style="color: #A8A8A8;">Doha-Qatar</li>
+									
+									
+								</ul>
+
+							</div>
+						</div>
+						
+					</div>
+				
+					<a href="mailto: info@brightmedia.tech"><p style="text-align: center;margin-top: 40px;font-weight: 800;"> info@brightmedia.tech </p></a>
+				</div>
+				
+			</div>
+			<div class="ori-footer-copyright d-flex justify-content-between">
+				<div class="ori-copyright-text">
+					© 2024 All Right Recived - Bright Media 
+				</div>
+				<div class="ori-copyright-social">
+					<a href="https://wa.me/225 0797979387" aria-label="fa-whatsapp"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.instagram.com/brightmedia.tech/" aria-label="fa-instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/brightmedia-tech/" aria-label="fa-linkedin"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.facebook.com/brightmediaglobal/" aria-label="fa-facebook-f"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/@MoideenShahil" aria-label="fa-youtube"><i class="fab fa-youtube"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- End of Footer section
+	============================================= -->	
+	
+	<!-- For Js Library -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/appear.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<script src="assets/js/twin.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/knob.js"></script>
+	<script src="assets/js/jquery.filterizr.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/rbtools.min.js"></script>
+	<script src="assets/js/rs6.min.js"></script>
+	<script src="assets/js/jarallax.js"></script>
+	<script src="assets/js/jquery.inputarrow.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/jquery.marquee.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/translatelan.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script>
+	
+
+// Slick version 1.5.8
+
+$(document).ready(function(){
+    $('.customer-logos').slick({
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    dots: false,
+    pauseOnHover: false,
+    prevArrow: '<i class="slick-prev fas fa-angle-left"></i>',
+    nextArrow: '<i class="slick-next fas fa-angle-right"></i>',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 520,
+	  autoplay: true,
+    autoplaySpeed: 2000,
+      settings: {
+        slidesToShow: 2,
+		
+      }
+    }]
+    });
+  });
+	</script>
+	
+</body>
+</html>	

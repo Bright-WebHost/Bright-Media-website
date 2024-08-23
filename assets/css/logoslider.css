@@ -1,0 +1,225 @@
+.customer-logos{
+    background-color: white;
+    /* border-radius: 5px; */
+    /* margin: 10px; */
+    /* padding: 40px; */
+    height: 100%;
+    /* text-align: center; */
+    margin-bottom: 40px;
+  }
+
+.slick-slide {
+    margin: 0px 20px;
+  }
+
+  .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-list:focus {
+    outline: none;
+  }
+  
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  
+  .slick-track:before,
+  .slick-track:after {
+    display: table;
+    content: "";
+  }
+  
+  .slick-track:after {
+    clear: both;
+  }
+  
+  .slick-loading .slick-track {
+    visibility: hidden;
+  }
+  
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+  }
+  
+  [dir="rtl"] .slick-slide {
+    float: right;
+  }
+  
+  .slick-slide img {
+    display: block;
+  }
+  
+  .slick-slide.slick-loading img {
+    display: none;
+  }
+  
+  .slick-slide.dragging img {
+    pointer-events: none;
+  }
+  
+  .slick-initialized .slick-slide {
+    display: block;
+  }
+  
+  .slick-loading .slick-slide {
+    visibility: hidden;
+  }
+  
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+  
+  .slick-arrow.slick-hidden {
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  /* Default styles for the arrows */
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 0; /* hide the text content of the arrows */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none; /* remove the default arrow styles */
+    background: transparent; /* remove the default arrow styles */
+    outline: none; /* remove the default arrow styles */
+    /* display: none !important; */
+  }
+  @media (max-width: 768px) {
+    .slick-prev,
+    .slick-next {
+        top: 50%; /* Adjust the position for mobile view */
+        transform: translateY(-50%);
+        font-size: 20px; /* Adjust the size for better visibility */
+        /* Add any additional mobile-specific styles here */
+    }
+}
+  
+  .slick-prev:before,
+  .slick-next:before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* adjust the width as needed */
+    height: 20px; /* adjust the height as needed */
+    border: solid #444; /* set the border color */
+    border-width: 0 3px 3px 0; /* create the arrow shape */
+    transform: rotate(-45deg); /* rotate the arrow shape */
+  }
+  
+  .slick-prev:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid #444;
+    border-width: 0 3px 3px 0;
+    transform: rotate(135deg); /* adjust the rotation to point the arrow to the left */
+  }
+  
+  /* Styles for the arrows on smaller screens */
+  @media screen and (max-width: 768px) {
+    .slick-prev:before,
+    .slick-next:before {
+      width: 16px;
+      height: 16px;
+      border-width: 0 2px 2px 0;
+    }
+    
+    .slick-prev {
+      left: 40px;
+    }
+    
+    .slick-next {
+      /* chnage 18 */
+      /* right: 40px; */
+    
+    }
+  }
+  
+  /* Styles for the arrows on even smaller screens */
+  @media screen and (max-width: 520px) {
+    .slick-prev:before,
+    .slick-next:before {
+      width: 12px;
+      height: 12px;
+      border-width: 0 1px 1px 0;
+    
+    }
+    
+    .slick-prev {
+      left: 5px;
+    }
+    
+  /* .slick-slide img {
+    width: 100%;
+    height: 100%;
+  } */
+   /* img{
+    height: 100%;
+  } */
+    
+    .slick-next {
+      right: 5px;
+    }
+  }
+  
+  /* Position the arrows outside the slider */
+  /* .slick-prev {
+    left: -40px; 
+  }
+  
+  .slick-next {
+    right: -40px; 
+  } */
+  
+ 
